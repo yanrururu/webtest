@@ -1,0 +1,533 @@
+@import url("reset.css");
+
+*{
+	margin:0;
+	padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+	font-family: Arial,"Microsoft JhengHei","Heiti TC","sans-serif";
+}
+
+img{
+    display: block;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+h3{
+    color: #1a1a1a;
+}
+
+p{
+    color: #333333;
+}
+
+/*--------------------------------------------------------------*/
+
+header{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+}
+
+header > nav{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header > nav > img{
+    display: inline-block;
+    height: 65px;
+    width: auto;
+    float: left;
+}
+
+header > nav > div {
+    float: right;
+}
+
+header > nav > div > a{
+    display: block;
+    line-height: 65px;
+    font-size: 14px;
+    float: left;
+    color: #333;
+    padding: 0 0 0 20px;
+}
+
+header > nav > div > a:hover{
+    color: #5a95cf;
+}
+
+a#menu{
+    display: none;
+}
+
+/*--主視覺------------------------------------------------------------*/
+
+article{
+    padding-top: 65px;
+}
+
+article > div{
+    background-image: url("../images/kv.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 690px;
+}
+
+article > div > div{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+article > div > div > h1{
+    text-align: left;
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*--按鈕------------------------------------------------------------*/
+
+.btn{
+    width: 200px;
+    padding: 9px 0;
+    margin: 12px 0;
+    border-radius:30px;
+    background-color: #5a95cf;
+    border: 1px solid #5a95cf;
+    cursor:pointer;
+    display: inline-block;
+    text-align: center;  
+    vertical-align: middle;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #5a95cf;
+}
+
+.btn_line{
+    width: 100px;
+    padding: 9px 0;
+    margin: 12px 0;
+    border-radius:30px;
+    border: 1px solid #5a95cf;
+    cursor:pointer;
+    display: inline-block;
+    text-align: center;  
+    vertical-align: middle;
+    color: #5a95cf;
+}
+
+/*---活動區塊-----------------------------------------------------------*/
+
+#part2{
+    background-color: #eeeeee;
+}
+
+section{
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+
+section > h2{
+    text-align: center;
+    line-height: 50px;
+    padding: 2px 8px;
+    margin: 0 auto;
+}
+
+section > div{
+    width: 1024px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+section > .card{
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#part1 > div > div.item{
+    width: 20%;
+    padding: 20px 0px;
+}
+
+#part2 > div > div.item{
+    width: 30%;
+    padding: 20px 0px;
+}
+
+#part3 > div > div.item{
+    width: 48%;
+    padding: 30px 0px;
+    text-align: left;
+}
+
+#part3 > div > div.item > p{
+    padding: 5px 0 8px 0;
+}
+
+
+div.item > h2{
+    line-height: 50px;
+}
+
+div.item > h3{
+    padding-bottom: 10px;
+}
+
+#part1 > div > div.item > p{
+    text-align: left;
+}
+
+div.item > .text_left{
+    float: left;
+}
+
+div.item > .text_right{
+    float: right;
+    font-size: 14px;
+    color: #666666;
+}
+
+div.item > p{
+    line-height: 26px;
+}
+
+div.item > ul > li > span{
+    color: #F8524C;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div.item > img{
+    width: 100%;
+    display: inline-block;
+}
+
+/*--下拉選單------------------------------------------------------------*/
+
+aside{
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background-color: #f1f4f9;
+}
+
+aside > h2{
+    text-align: center;
+    line-height: 50px;
+    padding: 2px 8px;
+    margin: 0 auto;
+}
+
+aside > div{
+    border: 1px solid #5376ad;
+    border-radius: 30px;
+    width: 1024px;
+    margin: 30px auto;
+    padding: 15px 20px 15px 20px;
+}
+
+aside > div > a{
+    font-size: 16px; 
+    cursor: pointer; 
+    display: block; 
+    line-height: 30px;  
+    text-align: left;
+    color: #5376ad;
+    margin: 0 auto;
+}
+
+aside > div > a > img{ 
+    width: 20px;
+    position: relative;
+    display: inline-block;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    top: 5px;
+    float: right;
+}
+
+aside > div > a > img.rotate{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+aside > div > div{
+    display: none;
+    margin: 0 auto;
+    padding: 20px 0 15px 0;
+    line-height: 28px;
+    transition: none;
+}
+
+aside > div > div > p{
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+}
+
+aside > div > div > p > a{
+    font-size: 14px;
+    color: #00A19B;
+    text-decoration:underline;
+}
+
+aside > div > div > ul{
+    text-align: justify;
+    list-style: disc; 
+    margin-left: 17px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #595959;
+}
+
+aside > div > div > ul >li > ol{
+    text-align: justify;
+    list-style-type: decimal;
+    margin-left: 18px;
+}
+
+aside > div > div > ul > li > span{
+    color: #F8524C;
+}
+
+aside > div > div > ul > li > a{
+    color: #00A19B;
+    text-decoration:underline;
+}
+
+/*--Footer------------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+footer > div{
+    width: 1024px;
+    margin: 0 auto;
+    height: 50px;
+    overflow: hidden;
+}
+
+footer > div > .left{
+    float: left;
+}
+
+footer > div > .right{
+    float: right;
+}
+
+footer > div > div > p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+}
+
+footer > div > div > img{
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+
+
+/*--斷點 電腦------------------------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+    header > nav{
+        width: 90%;
+    }
+
+    header > nav > h1{
+        margin-left: 5%;
+    } 
+
+    article > div{
+        width: 100%;
+    }
+
+    section > div, article > div > div, aside > div, footer > div{
+        width: 90%;
+    }
+
+}
+
+/*---斷點 平板-----------------------------------------------------------*/
+
+@media screen and (max-width:730px) {
+    article > div{
+        width: auto;
+        height: 600px;
+        background-position: 40%;
+    }
+
+    aside > div{
+        width: 100%;
+    }
+
+    aside > div > div{
+        padding: 0 40px;
+    }
+
+    aside > div > div > ul > li{
+        margin-left: 2px;
+    }
+
+}
+
+/*---斷點 手機-----------------------------------------------------------*/
+
+@media screen and (max-width:640px) {
+    a#menu{
+        position: absolute;
+        top: 0;
+        right: 2%;
+        display: block;
+        width: 50px;
+        height: 65px;
+        background-image: url("../images/menu.svg");
+        background-position: 50% 50%;
+        background-size: 95% auto;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        transition: height .2s;
+        height: 65px;
+        overflow: hidden;
+    }
+
+    header.openMenu{
+        height: 327px;
+
+    }
+
+    header > nav {
+        width: 90%;
+        height: 320px;
+
+    }
+
+    header > nav > div {
+        clear: both;
+        width: 100%;
+        height: 320px;
+
+    }
+
+    header > nav > div > a{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        line-height: 65px;
+        text-align: center;
+        padding: 0 0 0 0;
+        border-bottom: 1px solid #efefef;
+    }
+
+    section > div, article > div > div{
+        width: 100%;
+    }
+
+    article > div{
+        background-position: 34%;
+    }
+
+    article > div > div > h1{
+        line-height: 57px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section > .card{
+        justify-content: space-evenly;
+    }
+
+    #part1 > div > div.item{
+        width: 42%;
+    }
+
+    #part2 > div > div.item{
+        width: 90%;
+    }
+
+    #part3 > div > div.item{
+        width: 100%;
+        padding: 0 0;
+    }
+
+    #part3 > h2{
+        padding: 0 0 20px 0;
+    }
+
+    #part3 > div > div.item > h3{
+        padding: 0 20px 0 20px;
+    }
+
+    #part3 > div > div.item > p{
+        padding: 5px 20px 8px 20px;
+    }
+
+    #part3 > div > div.item > a{
+        margin-left: 20px;
+    }
+
+    #part3 > div > div.item > img{
+        padding: 26px 0 20px 0;
+    }
+
+    aside > div{
+        width: 90%;
+    }
+    aside > div > div{
+        padding: 0 15px 0 0;
+    }
+    aside > div > a{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    #part1 > div > div.item > p{
+        font-size: 14px;
+    }
+    
+}
+
+
+
+
+
+
+
+
