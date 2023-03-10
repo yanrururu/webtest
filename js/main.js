@@ -1,17 +1,16 @@
-// 漢堡選單
 $(function(){
-	$("#menu").on("click",function(){
-		if($("header").hasClass("openMenu")){
-			$("header").removeClass("openMenu");
-		}
-		else{
-			$("header").addClass("openMenu");
-		}
-	})
+  $("#menu").on("click",function(){
+    if($("header").hasClass("openMenu")){
+      $("header").removeClass("openMenu");
+    }
+    else{
+      $("header").addClass("openMenu");
+    }
+  })
 })
 
 
-// 開合選單
+
 var coll = document.getElementsByClassName("notice_btn");
 var i;
 
@@ -28,8 +27,14 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-// 開合箭頭
-$(".notice_btn").click(function (e) {
-  e.preventDefault();
-  $(this).find("img").toggleClass("rotate");
-});
+
+$(function(){
+  $(".notice_btn").on("click",function(){
+    if($(this).find("img").hasClass("rotate")){
+      $(this).find("img").removeClass("rotate");
+    }
+    else{
+      $(this).find("img").addClass("rotate");
+    }
+  })
+})
