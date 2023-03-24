@@ -1,0 +1,458 @@
+@import url("reset.css");
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    display: block;
+}
+
+/* --------------------------------------------- */
+
+header{
+	width: 100%;
+	height: 66px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	/* offset-x | offset-y | blur-radius | color */
+	box-shadow: 0 0 3px #333;
+	z-index: 999;
+}
+
+header > nav{
+	width: 1024px;
+	margin: 0 auto;
+}
+header > nav > h1{
+	display: block;
+	float: left;
+}
+header > nav > h1 > img{
+	height: 66px;
+}
+header > nav > div{
+	display: block;
+	float: right;
+}
+header > nav > div > a{
+	line-height: 66px;
+	font-size: 14px;
+	color: #000;
+	text-decoration: underline;
+	padding-right: 20px;
+}
+header > nav > div > a:hover{
+	color: #5a95cf;
+}
+
+
+/* kv --------------------------------------------- */
+
+article{
+	margin-top: 66px;
+}
+
+article > div{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 685px;
+	background-image: url('images/kv.jpg');
+	background-size: cover;
+}
+article > div > div{
+	width: 1024px;
+	margin: 0 auto;
+}
+article > div > div > h2{
+	font-size: 45px;
+	color: #fff;
+}
+
+/* part1 --------------------------------------------- */
+
+section{
+	width: 100%;
+
+}
+section > div{
+	width: 1024px;
+	margin: 0px auto;
+
+}
+section > div > h3{
+	font-size: 25px;
+	color: #000;
+	text-align: center;
+	line-height: 35px;
+	padding: 60px 0 30px 0;
+
+}
+section > div > .pic{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 60px;
+
+}
+section > div > .pic > div{
+	width: 20%;
+
+}
+section > div > .pic > div > img{
+	width: 100%;
+
+}
+section > div > .pic > div > p{
+	font-size: 14px;
+	line-height: 30px;
+
+}
+section > div > .pic > div > p.left{
+	float: left;
+	color: #000;
+
+}
+section > div > .pic > div > p.right{
+	float: right;
+	color: #666;
+
+}
+
+/* part2 --------------------------------------------- */
+
+#part2{
+	background-color: #eeeeee;
+	padding-bottom: 60px;
+
+}
+
+section > div > .card_1{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding-bottom: 30px;
+
+}
+
+section > div > .card_1 > div{
+	width: 30%;
+
+}
+
+section > div > .card_1 > div > h4{
+	font-size: 18px;
+	line-height: 28px;
+
+}
+section > div > .card_1 > div > p{
+	font-size: 15px;
+	line-height: 25px;
+
+}
+
+.btn{
+	display:block;
+	width: 200px;
+	height: auto;
+	margin: 10px auto;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	background-color: #5A95CF;
+	border: 1px solid #5A95CF;
+	border-radius: 30px;
+	cursor: pointer;
+
+}
+
+.btn:hover{
+	color: #5A95CF;
+	background-color: #fff;
+}
+
+/* part3 --------------------------------------------- */
+
+section > div > .card_2{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
+
+}
+
+section > div > .card_2 > div{
+	width: 48%;
+
+}
+
+section > div > .card_2 > div > img{
+	width: 100%;
+
+}
+section > div > .card_2 > div > h4{
+	font-size: 18px;
+	line-height: 28px;
+	padding-bottom: 18px;
+}
+section > div > .card_2 > div > p{
+	font-size: 15px;
+	line-height: 25px;
+	padding-bottom: 15px;
+}
+section > div > .card_2 > div > a{
+	display: inline-block;
+
+}	
+
+/* part4 --------------------------------------------- */
+
+#part4{
+	background-color: #f1f4f9;
+	padding-bottom: 60px;
+}
+.faq{
+	width: 100%;
+	height: auto;
+	overflow: hidden;	
+	border: 1px solid #5376af;
+	border-radius: 30px;
+	margin: 0 auto 30px auto;
+	padding: 10px 40px;
+
+}
+
+.faq_title{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.faq_title > h5{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 38px;
+	color: #5376af;
+
+}
+.faq_title > .arrow{
+	background-image: url('images/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 24px;
+	-webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+}
+.faq_title > .arrow.rotate{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.faq_content{
+	display: none;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: justify;
+	padding: 15px 0	;
+	margin: 0 auto;
+}
+.faq_content > ul{
+	list-style: disc;
+	color: #595959;
+
+}
+.faq_content > ul > li > ol{
+	list-style: circle;
+	margin-left: 18px;
+	text-align: justify;
+
+}
+/* footer --------------------------------------------- */
+
+footer{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	background-color: black;
+
+}
+
+footer > div{
+	width: 1024px;
+	height: auto;
+	margin: 0 auto;
+
+}
+
+footer > div > .copyright{
+	float: left;
+}
+
+footer > div > .copyright > p{
+	font-size: 12px;
+	color: #fff;
+	line-height: 50px;
+	letter-spacing: 1px;
+
+}
+
+footer > div > .social_media{
+	float: right;
+}
+
+footer > div > .social_media > img{
+	display: inline-block;
+	padding: 10px 0;
+	width: 30px;
+	margin-left: 10px;
+
+}
+
+
+/* PC --------------------------------------------- */
+
+@media screen and (max-width:1024px){
+	header > nav , article > div > div, section > div , footer > div{
+		width: 90%;
+
+	}
+}
+
+/* Pad --------------------------------------------- */
+
+@media screen and (max-width:760px){
+	article > div{
+		height: 530px;
+
+	}
+	article > div > div > h2{
+		font-size: 38px;
+
+	}
+} 
+/* phone --------------------------------------------- */
+
+@media screen and (max-width:580px){
+
+	a#menu{
+		background-image: url('images/menu.svg');
+		background-repeat: no-repeat;		
+ 		display: block;
+ 		width: 65px;
+ 		height: 65px;
+ 		position: absolute;
+ 		top: 0;
+ 		right: 8px;
+ 		background-size: 70%;
+ 		background-position: 50% 50%;
+
+	}	
+
+	header{
+		overflow: hidden;
+	}
+	header.openMenu{
+		height: 330px;
+	}
+
+	header > nav{
+		width: 90%;
+		height: 330px;
+
+	}
+	header > nav > div{
+		clear: both;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+
+	}
+	header > nav > div > a{
+		border-bottom: 1px solid #E6E6E6;
+		overflow: hidden;
+	}
+
+
+	article > div{
+		height: 650px;
+		background-position: 45%;
+
+	}
+	article > div > div > h2{
+		font-size: 52px;
+
+	}
+	section > div > h3{
+		font-size: 23px;
+
+	}	
+	section > div > .pic{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	section > div > .pic > div{
+		width: 47%;
+		padding-bottom: 30px;
+
+	}
+	section > div > .card_1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 10px;
+
+	}
+	section > div > .card_1 > div{
+		width: 90%;
+		padding-bottom: 35px;
+
+	}
+	section > div > .card_2{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	section > div > .card_2 > div{
+		width: 100%;
+	}
+	section > div > .card_2 > div > h4{
+		padding-top: 30px;
+		padding-bottom: 10px;
+
+	}
+	.faq{
+		padding: 8px 20px;
+	}
+	.faq_title > h5{
+		font-size: 14px;
+		line-height: 32px;
+	}
+	.faq_content{
+		padding-left: 18px;
+		padding-right: 4px;
+	}
+
+}
+
+
+
+
+
+
