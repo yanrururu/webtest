@@ -15,7 +15,7 @@ $(function() {
 })
 
 
-// financial-button(tab)
+// financial-button(tab) 
 $(function() {
     $(".filter > button").click(function() {
         $(this).css("color", "#434343").css("background", "#fff");
