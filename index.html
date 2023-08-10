@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>網頁測試：信用卡補件</title>
-    <meta name="robots" content="noindex">
-
+    <title>信用卡補件說明 | 玉山銀行</title>
     <meta name="description" content="">
     <meta property="og:title" content="信用卡補件說明" />
     <meta property="og:description" content="" />
@@ -18,9 +16,10 @@
     <link rel="shortcut icon" href="https://www.esunbank.com/bank/images/esunbank/favicon.ico">
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <script src="js/jquery.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
 
 
     <!-- Google Tag Manager -->
@@ -91,7 +90,7 @@
             </div>
 
             <div class="inbox">
-                <h3><span>02</span> 身分證件 <a data-fancybox="" data-src="img/sample2.jpg" href="javascript:;"><i class="fa-solid fa-up-right-from-square fa-beat" style="color:#5376ad"></i>
+                <h3><span>02</span> 身分證件 <a data-fancybox="" data-src="img/sample2.jpg" href="javascript:;"><i class="fa-solid fa-up-right-from-square fa-beat"></i>
                 </a></h3>
                 <ul>
                     <li>中華民國國民身分證正反面影本</li>
@@ -119,8 +118,7 @@
     <!-- financial -->
     <section id="financial" class="apply adjust">
         <div>
-        <h2><span class="adjust">額度調整</span> 財力證明 請擇一上傳
-
+        <h2><span class="adjust">額度調整</span>財力證明 請擇一上傳
             <!-- 辦卡補件 -->
             <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="btn apply">
                 <i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i> 立即上傳
@@ -132,21 +130,23 @@
             </a>
         </h2>
         
-
+        <!-- 職業別篩選 -->
         <div class="filter">
             <button id="employee" type="radio"><i class="fa-solid fa-briefcase" ></i> 上班族(受薪人士)</button>
             <button id="house"  type="radio"><i class="fa-solid fa-house" ></i> 家管/退休/自由業</button>
+            <button id="proprietor"  type="radio"><i class="fa-solid fa-user-tie" ></i> 企業負責人</button>
+
             <!-- apply -->
             <button id="student_ap"  type="radio"><i class="fa-solid fa-book" ></i> 學生</button>
-
             <!-- adjust -->
             <button id="student_ad"  type="radio"><i class="fa-solid fa-book" ></i> 學生</button>
-            <button id="proprietor"  type="radio"><i class="fa-solid fa-user-tie" ></i> 企業負責人</button>
+            
         </div>
 
+        <!-- 財證類型 -->
         <div class="flex">
 
-            <!-- 學生/調額 -->
+            <!-- 學生：調額 -->
             <div class="adjust student_ad">
                 <div class="content">
                     <h3>畢業證書</h3>
@@ -155,6 +155,7 @@
                 </a>
             </div>
 
+            <!-- 負責人 -->
             <div class="apply adjust proprietor">
                 <div class="content">
                     <h3>401/403/405報表</h3>
@@ -166,6 +167,7 @@
                 </a>
             </div>
 
+            <!-- 上班族/學生 -->
             <div class="apply adjust employee student">
                 <div class="content">
                     <h3>個人薪資單(最近3個月內)</h3>
@@ -177,6 +179,7 @@
                 </a>
             </div>
 
+            <!-- 上班族/學生/負責人 -->
             <div class="apply adjust employee student proprietor">
                 <div class="content">
                     <h3>薪資轉帳/活期帳戶存摺/網路銀行截圖</h3>
@@ -190,6 +193,7 @@
                 </a>
             </div>
 
+            <!-- 家管 -->
             <div class="apply adjust house">
                 <div class="content">
                     <h3>活期帳戶存摺/網路銀行截圖/退休俸祿存摺</h3>
@@ -203,11 +207,11 @@
                 </a>
             </div>
 
-            <div class="apply adjust employee">
+            <div class="apply adjust employee proprietor">
                 <div class="content">
                     <h3>扣繳憑單/所得清單/報稅收執聯</h3>
                     <ul>
-                        <!-- 上班族 -->
+                        <!-- 上班族/負責人 -->
                         <li>最新年度扣繳憑單/國稅局所得清單，薪資所得申報公司需為現職公司</li>
                         <li>最新年度綜合所得稅報稅收執聯，需完整附上，並且可清楚看出您的姓名、公司名稱及申報年度</li>
                     </ul>
@@ -216,11 +220,11 @@
                 </a>
             </div>
 
-            <div class="apply adjust house student proprietor">
+            <div class="apply adjust house student">
                 <div class="content">
                     <h3>扣繳憑單/所得清單/報稅收執聯</h3>
                     <ul>
-                        <!-- 家管/自由業 -->
+                        <!-- 家管/學生 -->
                         <li>最新年度扣繳憑單/國稅局所得清單</li>
                         <li>最新年度綜合所得稅報稅收執聯，需完整附上，並且可清楚看出您的姓名及申報年度</li>
                     </ul>
@@ -229,6 +233,7 @@
                 </a>
             </div>
 
+            <!-- all -->
             <div class="apply adjust employee house student proprietor">
                 <div class="content">
                     <h3>定存單/房屋稅單/建物所有權狀/建物謄本</h3>
@@ -242,6 +247,7 @@
                 </a>
             </div>
 
+            <!-- 上班族/學生/負責人 -->
             <div class="apply adjust employee student proprietor">
                 <div class="content">
                     <h3>勞健保投保明細</h3>
@@ -254,6 +260,7 @@
                 </a>
             </div>
 
+            <!-- all -->
              <div class="apply adjust employee house student proprietor">
                 <div class="content">
                     <h3>人壽保單可借貸餘額/股票或基金現值/理財對帳單</h3>
@@ -299,7 +306,7 @@
 
 </body>
 
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/fancybox.js"></script>
 
 </html>
