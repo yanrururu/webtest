@@ -23,9 +23,10 @@ img{
     width: 180px;
     padding: 0 10px;
     background-color: #3cbaad;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     color: #fff;
+    margin: 0 10px 0 0;
     display: inline-block;
     text-align: center;
     float: right;
@@ -74,6 +75,7 @@ section > div > h2{
     color: #434343
 }
 
+
 /* identity */
 section > div > .inbox{
     margin: 30px auto;
@@ -83,18 +85,18 @@ section > div > .inbox > h3{
     font-size: 18px;
     font-weight: bold;
     line-height: 35px;
-    color: #66cccc;
+    color: #5376ad;
 }
 
 section > div > .inbox > h3 > span{
-    background-color: #66cccc;
+    background-color: #5376ad;
     border-radius: 50%;
-    color: #66cccc;
+    color: #5376ad;
     padding: 6px;
 }
 
 section > div > .inbox > ul{
-    border-left-color: #66cccc;
+    border-left-color: #5376ad;
     border-left-width: 2px;
     border-left-style: solid;
     margin-left: 1em;
@@ -162,13 +164,13 @@ section > div > .filter{
     text-align: center;
 }
 
-/* financial:button(tab) */
+/* financial-button(tab) */
 section > div > div > button{
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    width: 24.5%;
-    margin: 0 1px;
+    width: 23%;
+    margin: 0 6px;
     padding: 20px 0;
     background-color: #fafafa;
     box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%);
@@ -177,7 +179,6 @@ section > div > div > button{
     color: #7c7c7c;
 }
 
-/* financial:content */
 .employee, .house, .student, .proprietor{
     display: none;
 }
@@ -188,12 +189,11 @@ section > div > .flex{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
 
 section > div > .flex > div{
     width: 31.5%;
-    margin: 0 0 50px 0;
+    margin: 0 10px 50px 10px;
     background-color: #fff;
     border: 1.2px solid #75c8e9;
     border-bottom: 6px solid #79b3d1;
@@ -238,19 +238,6 @@ section > div > .flex > div > .content > ul{
         width: 100%;
         height: auto;
     }
-
-    section > div > div > button{
-        width: 23.5%;
-        margin: 5px 2px;
-    }
-}
-
-
-/*--Pad pro------------------------------------------------------------*/
-@media screen and (max-width:1024px) {
-    section > div > div > button{
-        width: 23.5%;
-    }
 }
 
 /*--Pad------------------------------------------------------------*/
@@ -266,7 +253,6 @@ section > div > .flex > div > .content > ul{
     section > div > .flex > div > .content{
         height: auto;
     }
-
 }
 
 /*--iPad/Mobile-----------------------------------------------------------*/

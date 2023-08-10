@@ -1,15 +1,14 @@
 // kv&footer
 $(function(){
-    $(".kv_text > button").click(function(){
-      $("article").css("height", "60vh")
-      $(".kv_text").css("height", "50vh")
+    $(".kv > button").click(function(){
+      $("article > div").css("height", "500px")
       $("footer").css("position", "relative")
     });
 })
 
 // kv-button
 $(function() {
-    $(".kv_text > button").click(function() {
+    $(".kv > button").click(function() {
         $(this).css("background", "#262626");
         $(this).siblings("button").css("background", "");
     }); 
