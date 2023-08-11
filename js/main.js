@@ -19,7 +19,7 @@ $(function() {
 // financial-button(tab) 
 $(function() {
     $(".filter > button").click(function() {
-        $(this).css("color", "#262626").css("background", "#fff");
+        $(this).css("color", "#26cbcb").css("background", "#fff");
         $(this).siblings("button").css("color", "").css("background", "");
     }); 
 })
@@ -38,7 +38,7 @@ $("#apply").click(function(){
   $(".flex > div").not(".employee").hide();
 
   //預設第一項目點擊效果
-  $("#employee").css("color", "#262626").css("background", "#fff");
+  $("#employee").css("color", "#26cbcb").css("background", "#fff");
   $("#employee").siblings("button").css("color", "").css("background", "");
 });
 
@@ -55,7 +55,7 @@ $("#adjust").click(function(){
   $(".flex > div").not(".employee").hide();
 
   //預設第一項目點擊效果
-  $("#employee").css("color", "#262626").css("background", "#fff");
+  $("#employee").css("color", "#26cbcb").css("background", "#fff");
   $("#employee").siblings("button").css("color", "").css("background", "");
 });
 

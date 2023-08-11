@@ -115,7 +115,7 @@ section{
     height: auto;
     overflow: hidden;
     padding-bottom: 50px;
-    background-image: url("../img/bg_page_green.svg");
+    background-image: url("../img/bg_green.svg");
     background-repeat: repeat-y;
     background-position: top center;
     background-size: cover;
@@ -155,7 +155,7 @@ section > div > .inbox > h3 > span{
 }
 
 
-section > div > .inbox > h3 > a{
+.inbox a{
     color: #00a19b;
 }
 
@@ -183,6 +183,10 @@ section > div > .inbox li li{
 
 section > div > .inbox li li::before {
     content: "("counter(my-counter) ")";
+}
+
+section > div > .inbox li li > a{
+    text-indent: 0em;
 }
 
 section > div > .note{
@@ -278,7 +282,7 @@ section > div > .flex > div > .content > h3{
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 1px;
-    padding: 10px 0;
+    padding: 2px 0 15px 0 ;
     border-bottom: 1.2px solid #47cccc;
 }
 
@@ -298,6 +302,17 @@ section > div > .flex > div > .content > ul{
     padding: 15px 14px;
     background-color: #47cccc;
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.openbox2{
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 14px;
+    background-color: #fff;
     border-radius: 50%;
     display: inline-block;
     float: right;
@@ -326,9 +341,9 @@ section > div > .flex > div > .content > ul{
     }
 
     section > div > .flex > div{
-        width: 100%;
-        height: auto;
+        width: 47%;
     }
+    
 
     section > div > div > button{
         width: 23.5%;
@@ -349,13 +364,19 @@ section > div > .flex > div > .content > ul{
     section#financial{
         padding-bottom: 50px;
     }
+
     section > div > .flex{
-        flex-direction: column;
-        align-content: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    section > div > .flex > div > .content{
-        height: auto;
+    section > div > .flex > div{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .openbox2{
+        display: none;
     }
 
 }
@@ -382,13 +403,13 @@ section > div > .flex > div > .content > ul{
         margin: 30px 0 20px 0;
     }
 
-    section > div > .flex{
+    section > div > .flex > div{
         width: 98%;
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
     }
 
-    section > div > .flex > div{
-        margin: 0 10px 25px 10px;
+    section > div > .flex > div > .content{
+        height: auto;
     }
 
     section > div > div > button{
