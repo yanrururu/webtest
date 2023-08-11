@@ -1,14 +1,15 @@
 // kv&footer
 $(function(){
-    $(".kv > button").click(function(){
-      $("article > div").css("height", "500px")
+    $(".kv_text > button").click(function(){
+      $("article").css("height", "60vh")
+      $(".kv_text").css("height", "50vh")
       $("footer").css("position", "relative")
     });
 })
 
 // kv-button
 $(function() {
-    $(".kv > button").click(function() {
+    $(".kv_text > button").click(function() {
         $(this).css("background", "#262626");
         $(this).siblings("button").css("background", "");
     }); 
@@ -18,7 +19,7 @@ $(function() {
 // financial-button(tab) 
 $(function() {
     $(".filter > button").click(function() {
-        $(this).css("color", "#434343").css("background", "#fff");
+        $(this).css("color", "#26cbcb").css("background", "#fff");
         $(this).siblings("button").css("color", "").css("background", "");
     }); 
 })
@@ -37,7 +38,7 @@ $("#apply").click(function(){
   $(".flex > div").not(".employee").hide();
 
   //預設第一項目點擊效果
-  $("#employee").css("color", "#434343").css("background", "#fff");
+  $("#employee").css("color", "#26cbcb").css("background", "#fff");
   $("#employee").siblings("button").css("color", "").css("background", "");
 });
 
@@ -54,7 +55,7 @@ $("#adjust").click(function(){
   $(".flex > div").not(".employee").hide();
 
   //預設第一項目點擊效果
-  $("#employee").css("color", "#434343").css("background", "#fff");
+  $("#employee").css("color", "#26cbcb").css("background", "#fff");
   $("#employee").siblings("button").css("color", "").css("background", "");
 });
 

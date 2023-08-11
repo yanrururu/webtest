@@ -17,44 +17,105 @@ img{
     display: none;
 }
 
-/* a */
+
+h1{
+    color: #1c1c1c;
+}
+
+h2{
+    color: #262626;
+}
+
+h3{
+    color: #434343;
+}
+
+ul li{
+    color: #434343;
+}
+
+/* 立即上傳按鈕 */
 .btn{
     font-size: 16px;
     width: 180px;
     padding: 0 10px;
-    background-color: #3cbaad;
-    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+    background-color: #00c08b;
+    border: 1px solid #21cc96;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     color: #fff;
-    margin: 0 10px 0 0;
     display: inline-block;
     text-align: center;
     float: right;
 }
 
-/* fancybox */
-.openbox{
-    font-size: 18px;
-    width: 50px;
-    height: 50px;
-    padding: 15px 14px;
-    background-color: #79b3d1;
+.btn:hover{
+    font-size: 17px;
+}
+
+/*--kv------------------------------------------------------------*/
+article{
+    padding-top: 60px;
+    width: 100%;
+    height: 90vh;
+    background-image: url("../img/kv.jpg");
+    background-size: cover;
+    background-position: 50%;
+}
+
+article > div{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+article > div > .kv_text{
+    max-width: 600px;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+}
+
+article > div > div > h1{
+    max-width: 600px;
+    text-align: left;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* kv_button */
+article > div > div > button{
+    width: 180px;
+    padding: 15px 0;
+    background-color: #434343;
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
-    border-radius: 50%;
-    display: inline-block;
-    float: right;
+    border: 0px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    margin: 20px 10px 0 0;
+    letter-spacing: 1px;
 }
 
-.openbox a:hover{
-    background-color: #79b3d1;
+article > div > div > button:hover{
+    background-color: #262626;
 }
 
+
+/*--content------------------------------------------------------------*/
 section{
     width: 100%;
     height: auto;
     overflow: hidden;
     padding-bottom: 50px;
-    background-image: url("../img/bg_page_green.svg");
+    background-image: url("../img/bg_green.svg");
     background-repeat: repeat-y;
     background-position: top center;
     background-size: cover;
@@ -72,9 +133,7 @@ section > div > h2{
     line-height: 50px;
     margin: 50px auto;
     letter-spacing: 1px;
-    color: #434343
 }
-
 
 /* identity */
 section > div > .inbox{
@@ -85,18 +144,23 @@ section > div > .inbox > h3{
     font-size: 18px;
     font-weight: bold;
     line-height: 35px;
-    color: #5376ad;
+    color: #00a19b;
 }
 
 section > div > .inbox > h3 > span{
-    background-color: #5376ad;
+    background-color: #00a19b;
     border-radius: 50%;
-    color: #5376ad;
+    color: #00a19b;
     padding: 6px;
 }
 
+
+.inbox a{
+    color: #00a19b;
+}
+
 section > div > .inbox > ul{
-    border-left-color: #5376ad;
+    border-left-color: #00a19b;
     border-left-width: 2px;
     border-left-style: solid;
     margin-left: 1em;
@@ -121,6 +185,10 @@ section > div > .inbox li li::before {
     content: "("counter(my-counter) ")";
 }
 
+section > div > .inbox li li > a{
+    text-indent: 0em;
+}
+
 section > div > .note{
     margin-top: 30px;
 } 
@@ -128,7 +196,6 @@ section > div > .note{
 section > div > .note > h3{
     font-size: 18px;
     line-height: 35px;
-    color: #595959;
 }
 
 section > div > .note > h3 > span{
@@ -164,21 +231,26 @@ section > div > .filter{
     text-align: center;
 }
 
-/* financial-button(tab) */
+/* financial:button(tab) */
 section > div > div > button{
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    width: 23%;
-    margin: 0 6px;
+    width: 24.5%;
+    margin: 0 1px;
     padding: 20px 0;
     background-color: #fafafa;
     box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%);
     border: 0px;
-    border-bottom: 5px solid #3ec4ff;
+    border-bottom: 5px solid #47cccc;
     color: #7c7c7c;
 }
 
+section > div > div > button:hover{
+    color: #262626;
+}
+
+/* financial:content */
 .employee, .house, .student, .proprietor{
     display: none;
 }
@@ -189,14 +261,15 @@ section > div > .flex{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 section > div > .flex > div{
     width: 31.5%;
-    margin: 0 10px 50px 10px;
+    margin: 0 0 50px 0;
     background-color: #fff;
-    border: 1.2px solid #75c8e9;
-    border-bottom: 6px solid #79b3d1;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%);
+    border-bottom: 5px solid #47cccc;
     border-radius: 10px;
     padding: 20px;
 }
@@ -209,9 +282,8 @@ section > div > .flex > div > .content > h3{
     font-size: 17px;
     line-height: 30px;
     letter-spacing: 1px;
-    padding: 10px 0;
-    border-bottom: 1.2px solid #75c8e9;
-    color: #555;
+    padding: 2px 0 15px 0 ;
+    border-bottom: 1.2px solid #47cccc;
 }
 
 section > div > .flex > div > .content > ul{
@@ -220,12 +292,46 @@ section > div > .flex > div > .content > ul{
     padding-top: 20px ;
     list-style-type: disc;
     margin-left: 1.3em;
-    color: #555;
 }
 
+/* fancybox */
+.openbox{
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 14px;
+    background-color: #47cccc;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.openbox2{
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+}
+
+.openbox:hover{
+    background-color: #26cbcb;
+}
 
 /*--PC------------------------------------------------------------*/
 @media screen and (max-width:1200px) {
+    article {
+        background-position: 76%;
+    }
+
+    article > div > .kv_text{
+        margin-left: 5%;
+    }
+
     section > div{
         width: 90%;
     }
@@ -235,8 +341,21 @@ section > div > .flex > div > .content > ul{
     }
 
     section > div > .flex > div{
-        width: 100%;
-        height: auto;
+        width: 47%;
+    }
+    
+
+    section > div > div > button{
+        width: 23.5%;
+        margin: 5px 2px;
+    }
+}
+
+
+/*--Pad pro------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+    section > div > div > button{
+        width: 23.5%;
     }
 }
 
@@ -245,18 +364,35 @@ section > div > .flex > div > .content > ul{
     section#financial{
         padding-bottom: 50px;
     }
+
     section > div > .flex{
-        flex-direction: column;
-        align-content: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    section > div > .flex > div > .content{
-        height: auto;
+    section > div > .flex > div{
+        width: 100%;
+        justify-content: center;
     }
+    
+    .openbox2{
+        display: none;
+    }
+
 }
 
 /*--iPad/Mobile-----------------------------------------------------------*/
 @media screen and (max-width:768px) {
+    article {
+        background-position: 76%;
+    }
+
+    article > div > div > h1{
+        width: 75%;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
     .btn{
         clear: both;
         float: none;
@@ -267,13 +403,13 @@ section > div > .flex > div > .content > ul{
         margin: 30px 0 20px 0;
     }
 
-    section > div > .flex{
+    section > div > .flex > div{
         width: 98%;
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
     }
 
-    section > div > .flex > div{
-        margin: 0 10px 25px 10px;
+    section > div > .flex > div > .content{
+        height: auto;
     }
 
     section > div > div > button{
@@ -282,4 +418,11 @@ section > div > .flex > div > .content > ul{
         font-size: 14px;
     }
     
+}
+
+/*--Mobile-----------------------------------------------------------*/
+@media screen and (max-width:540px) {
+    article > div > div > button{
+        width: 150px;
+    }
 }

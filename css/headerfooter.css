@@ -43,49 +43,6 @@ header > nav > a > img{
     float: left;
 }
 
-/*--kv------------------------------------------------------------*/
-article{
-    padding-top: 60px;
-}
-
-article > div{
-    background-image: url("../img/kv.jpg");
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 720px;
-}
-
-article > div > div{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-article > div > div > h1{
-    text-align: left;
-    font-size: 45px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: #434343;
-}
-
-/* kv_button */
-article > div > div > button{
-    width: 180px;
-    padding: 15px 0;
-    background-color: #434343;
-    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
-    border: 0px;
-    border-radius: 30px;
-    font-size: 16px;
-    color: #fff;
-    margin: 20px 10px 0 0;
-    letter-spacing: 1px;
-}
 
 /*--footer------------------------------------------------------------*/
 footer{
@@ -163,7 +120,7 @@ footer > ul > li > a{
         width: 95%;
     }
 
-    article > div > div, .warning > div{
+    .warning > div{
         width: 90%;
     }
 
@@ -172,45 +129,32 @@ footer > ul > li > a{
     }
 }
 
-/*--Pad------------------------------------------------------------*/
-@media screen and (max-width:920px) {   
+
+@media screen and (max-width:1024px) {
     .warning > div > div.left_box{
         width: 100%;
         float: none;
         text-align: center;
     }
-
     .warning > div > div.right_box{
         width: 100%;
         float: none;
     }
-
     .warning > div > div.left_box p{
         line-height: 25px;
         padding-bottom: 10px;
     }
+}
 
-    article > div{
-        background-position: bottom;
-    }
-
-
+/*--Pad------------------------------------------------------------*/
+@media screen and (max-width:920px) {   
+    
+    
 }
 
 
-/*--iPad/Mobile-----------------------------------------------------------*/
+/*--iPad-----------------------------------------------------------*/
 @media screen and (max-width:768px) {
-    article > div{
-        height: 600px;
-        background-position: 75%;
-    }
-
-    article > div > div > h1{
-        font-size: 40px;
-        line-height: 60px;
-        width: 83%;
-    }
-
     .warning > div{
         clear: both;
         float: none;
@@ -218,18 +162,15 @@ footer > ul > li > a{
 
 }
 
+/*--Mobile-----------------------------------------------------------*/
 @media screen and (max-width:540px) {
-    article > div > div > button{
-        width: 150px;
-    }
-
     footer{
         position: relative;
     }
 }
 
 /*--Mobile se------------------------------------------------------------*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
 
     footer > ul > li{
         line-height: 25px;
