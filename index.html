@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>信用卡補件說明 | 玉山銀行</title>
+    <title>信用卡財力證明及相關文件須知 | 玉山銀行</title>
     <meta name="description" content="">
-    <meta property="og:title" content="信用卡補件說明" />
+    <meta property="og:title" content="信用卡財力證明及相關文件須知" />
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="玉山銀行">
     
@@ -65,8 +65,8 @@
         <div>
             <div class="kv_text">
                 <h1>財力證明及相關文件須知</h1>
-                <button id="apply" type="radio">辦卡補件</button>
-                <button id="adjust" type="radio">額度調整補件</button>
+                <button id="apply">辦卡補件</button>
+                <button id="adjust">額度調整補件</button>
             </div>
         </div>
     </article>
@@ -93,14 +93,22 @@
                 <h3><span>02</span> 身分證件</h3>
                 <ul>
                     <li>中華民國國民身分證正反面影本 
-                        <a data-fancybox="" data-src="img/id-1.png" href="javascript:;"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a>
+                        <a data-fancybox="" data-src="img/id-1.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
                     </li>
                     <li>外籍人士
                         
                         <ol>
-                            <li>護照影本 <a data-fancybox="" data-src="img/id-2.png" href="javascript:;"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a></li>
-                            <li>居留證影本 <a data-fancybox="" data-src="img/id-3.png" href="javascript:;"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a></li>
-                            <li>大陸地區人民需檢附「往來台灣通行證」及「中華民國台灣地區入出境許可證」影本 <a data-fancybox="" data-src="img/id-4.png" href="javascript:;"><i class="fa-solid fa-up-right-from-square fa-beat"></i></a></li>
+                            <li>護照影本 
+                                <a data-fancybox="" data-src="img/id-2.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
+                            </li>
+
+                            <li>居留證影本 
+                                <a data-fancybox="" data-src="img/id-3.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
+                            </li>
+
+                            <li>大陸地區人民需檢附「往來台灣通行證」及「中華民國台灣地區入出境許可證」影本 
+                                <a data-fancybox="" data-src="img/id-4.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
+                            </li>
                         </ol>
                     </li>
                 </ul>
@@ -121,11 +129,6 @@
     <section id="financial" class="apply adjust">
         <div>
         <h2><span class="adjust">額度調整</span>財力證明 請擇一上傳
-            <!-- 辦卡補件 -->
-            <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="btn apply">
-                <i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i> 立即上傳
-            </a>
-
             <!-- 調額補件 -->
             <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=DH#b" target="_blank" class="btn adjust">
                 <i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i> 立即上傳
@@ -134,14 +137,14 @@
         
         <!-- 職業別篩選 -->
         <div class="filter">
-            <button id="employee" type="radio"><i class="fa-solid fa-briefcase" ></i> 上班族(受薪人士)</button>
-            <button id="house"  type="radio"><i class="fa-solid fa-house" ></i> 家管/退休/自由業</button>
-            <button id="proprietor"  type="radio"><i class="fa-solid fa-user-tie" ></i> 企業負責人</button>
+            <button id="employee"><i class="fa-solid fa-briefcase" ></i> 上班族(受薪人士)</button>
+            <button id="house" ><i class="fa-solid fa-house" ></i> 家管/退休/自由業</button>
+            <button id="proprietor" ><i class="fa-solid fa-user-tie" ></i> 企業負責人</button>
 
             <!-- apply -->
-            <button id="student_ap"  type="radio"><i class="fa-solid fa-book" ></i> 學生</button>
+            <button id="student_ap" ><i class="fa-solid fa-book" ></i> 學生</button>
             <!-- adjust -->
-            <button id="student_ad"  type="radio"><i class="fa-solid fa-book" ></i> 學生</button>
+            <button id="student_ad" ><i class="fa-solid fa-book" ></i> 學生</button>
             
         </div>
 
@@ -149,9 +152,12 @@
         <div class="flex">
 
             <!-- 學生：調額 -->
-            <div class="adjust student_ad">
+            <div class="red adjust student_ad">
                 <div class="content">
                     <h3>畢業證書</h3>
+                    <ul>
+                        <li>持學生卡額度2萬，申請調額需另提供畢業證書</li>
+                    </ul>
                 </div>
                 <a class="openbox2"></a>
             </div>
@@ -167,7 +173,7 @@
                 <a class="openbox2"></a>
             </div>
 
-            <!-- 上班族/學生 -->
+            <!-- 薪資單：上班族/學生 -->
             <div class="apply adjust employee student">
                 <div class="content">
                     <h3>個人薪資單</h3>
@@ -180,8 +186,8 @@
                 </a>
             </div>
 
-            <!-- 上班族/學生/負責人 -->
-            <div class="apply adjust employee student proprietor">
+            <!-- 存摺：上班族/學生/負責人 -->
+            <div class="apply adjust employee student">
                 <div class="content">
                     <h3>薪資轉帳/活期帳戶存摺/網路銀行截圖</h3>
                     <ul>
@@ -190,11 +196,25 @@
                         <li>交易明細需完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
                     </ul>
                 </div>
-                <a class="openbox" data-fancybox="" data-src="img/f-2.png" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
+                <a class="openbox" data-fancybox="" data-src="#popup_info-deposit-1" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
                 </a>
             </div>
 
-            <!-- 家管 -->
+            <!-- 存摺：負責人 -->
+            <div class="apply adjust proprietor">
+                <div class="content">
+                    <h3>活期帳戶存摺/網路銀行截圖</h3>
+                    <ul>
+                        <li>須有完整帳號及戶名</li>
+                        <li>最近三個月內頁明細</li>
+                        <li>交易明細需完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
+                    </ul>
+                </div>
+                <a class="openbox" data-fancybox="" data-src="#popup_info-deposit-2" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
+                </a>
+            </div>
+
+            <!-- 存摺：家管 -->
             <div class="apply adjust house">
                 <div class="content">
                     <h3>活期帳戶存摺/網路銀行截圖/退休俸祿存摺</h3>
@@ -204,15 +224,15 @@
                         <li>交易明細需完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
                     </ul>
                 </div>
-                <a class="openbox" data-fancybox="" data-src="img/f-2.png" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
+                <a class="openbox" data-fancybox="" data-src="#popup_info-deposit-2" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
                 </a>
             </div>
 
+            <!-- 扣繳憑單：上班族/負責人 -->
             <div class="apply adjust employee proprietor">
                 <div class="content">
                     <h3>扣繳憑單/所得清單/報稅收執聯</h3>
                     <ul>
-                        <!-- 上班族/負責人 -->
                         <li>最新年度扣繳憑單/國稅局所得清單，薪資所得申報公司需為現職公司</li>
                         <li>最新年度綜合所得稅報稅收執聯，需完整附上，並且可清楚看出您的姓名、公司名稱及申報年度</li>
                     </ul>
@@ -221,11 +241,11 @@
                 </a>
             </div>
 
+            <!-- 扣繳憑單：家管/學生 -->
             <div class="apply adjust house student">
                 <div class="content">
                     <h3>扣繳憑單/所得清單/報稅收執聯</h3>
                     <ul>
-                        <!-- 家管/學生 -->
                         <li>最新年度扣繳憑單/國稅局所得清單</li>
                         <li>最新年度綜合所得稅報稅收執聯，需完整附上，並且可清楚看出您的姓名及申報年度</li>
                     </ul>
@@ -247,7 +267,7 @@
                 <a class="openbox2"></a>
             </div>
 
-            <!-- 上班族/學生/負責人 -->
+            <!-- 勞健保：上班族/學生/負責人 -->
             <div class="apply adjust employee student proprietor">
                 <div class="content">
                     <h3>勞健保投保明細</h3>
@@ -256,7 +276,7 @@
                         <li>健保投退保資料</li>
                     </ul>
                 </div>
-                <a class="openbox" data-fancybox="" data-src="img/f-4.png" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
+                <a class="openbox" data-fancybox="" data-src="#popup_info" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-xl" style="color:#fff"></i>
                 </a>
             </div>
 
@@ -278,6 +298,34 @@
 
     </section>
     
+    <!-- popup -->
+    <div id="popup_info" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-img">
+                <img class="fancybox_image" src="img/f-4.png" alt="">
+                <img class="fancybox_image" src="img/f-5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="popup_info-deposit-1" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-img">
+                <img class="fancybox_image" src="img/f-2-1.png" alt="">
+                <img class="fancybox_image" src="img/f-2-3.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="popup_info-deposit-2" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-img">
+                <img class="fancybox_image" src="img/f-2-2.png" alt="">
+                <img class="fancybox_image" src="img/f-2-4.png" alt="">
+            </div>
+        </div>
+    </div>
+
 
     <!-- footer -->
     <footer>
@@ -302,6 +350,21 @@
             <li>© E.SUN BANK</li>
         </ul>
     </footer>
+
+
+    <!-- 浮動按鈕 -->
+    <div class="float_btn">
+        <!-- 辦卡補件 -->
+        <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="btn_f apply">
+            <i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i>
+            <br>辦卡上傳
+        </a>
+         <!-- 調額補件 -->
+        <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=DH#b" target="_blank" class="btn_f adjust">
+            <i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i>
+            <br>調額上傳
+        </a>
+    </div>
 
 </body>
 

@@ -10,8 +10,8 @@ $(function(){
 // kv-button
 $(function() {
     $(".kv_text > button").click(function() {
-        $(this).css("background", "#262626");
-        $(this).siblings("button").css("background", "");
+        $(this).css("background", "#262626").css("color", "#fff");
+        $(this).siblings("button").css("background", "none").css("color", "#262626");
     }); 
 })
 
@@ -27,8 +27,8 @@ $(function() {
 
 //button-apply
 $("#apply").click(function(){
-  $("section, .btn").filter(".apply").show();
-  $(".btn, span").filter(".adjust").hide();
+  $("section, .btn, .btn_f").filter(".apply").show();
+  $("section .btn, span, .btn_f").filter(".adjust").hide();
   
   $("button").filter("#student_ap").show();
   $("button").filter("#student_ad").hide();
@@ -44,8 +44,8 @@ $("#apply").click(function(){
 
 //button-adjust
 $("#adjust").click(function(){
-  $("section, span, .btn").filter(".adjust").show();
-  $("section, .btn").not(".adjust").hide();
+  $("section, span, .btn, .btn_f").filter(".adjust").show();
+  $("section, .btn, .btn_f").not(".adjust").hide();
 
   $("button").filter("#student_ad").show();
   $("button").filter("#student_ap").hide();
