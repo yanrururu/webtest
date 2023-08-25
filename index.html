@@ -7,21 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>財力證明</title>
-    <meta name="description" content="">
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
+    <title>玉山信用卡 旅遊最高享5%</title>
+    <meta name="description" content="滿額最高贈25,000元，早鳥限定抽Rimowa行李箱、日航機票">
+    <meta name="keywords" content="玉山信用卡,出國旅遊,國內旅遊,台灣旅遊,國外旅遊,跨境旅遊,國際機票,訂房網,玉山卡,旅遊信用卡,旅遊刷卡優惠,住宿優惠,機票優惠,OTA,線上旅遊平台,KKday,Klook,AsiaYo,JAL,日本航空,機票,現金回饋,易遊網,EZtravel,雄獅,康福,東南旅行社,刷卡金,可樂旅遊,長汎,五福,鳳凰,亞洲遊,誠信旅行社,ezfly,山富,加利利,燦星旅遊,喜鴻,大興旅行社,華友,創造旅行社,行健,大興,上順,巨匠,世邦,四季島,九州七星,瑞風,JR東日本鐵路周遊券,長榮航空,中華航空,星宇航空,立榮航空,華信航空,國外消費,海外消費,日本旅遊,歐美旅遊"/>
+    <meta property="og:title" content="玉山信用卡 旅遊最高享5%" />
+    <meta property="og:description" content="早鳥限定抽Rimowa行李箱、日航機票" />
     <meta property="og:site_name" content="玉山銀行">
-    <meta name="robots" content="noindex, nofollow" />
-    
+    <meta property="og:image" content="https://www.esunbank.com.tw/event/credit/travel/img/kv.jpg">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="shortcut icon" href="https://www.esunbank.com/bank/images/esunbank/favicon.ico">
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    
-    <script type="text/javascript" src="js/jquery.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <!-- Google Tag Manager -->
     <script>
@@ -45,287 +49,418 @@
 </head>
 
 <body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LLQXL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <script>
+        AOS.init();
+    </script>
+
+
     <!-- header -->
     <header>
         <nav>
-            <a target="_blank" href="https://www.esunbank.com/zh-tw/personal">
-                <img src="img/esun_logo.svg" alt="esunbank">
-            </a>
+            <a target="_blank" href="https://www.esunbank.com/zh-tw/personal"><img src="img/esun_logo.svg"></a>
+
+            <a id="menu" href="javascript:;"></a>
+            <div>
+                <a href="#act1">指定旅遊/航空</a>
+                <a href="#act2">早鳥限定</a>
+                <a href="#shop">旅遊即時通</a>
+                <a href="">熱門旅遊卡</a>
+            </div>
         </nav>
-    </header>
+    </header> 
+
 
     <!-- kv -->
     <article>
         <div>
-            <div class="kv_text">
-                <h1>財力證明及相關文件須知</h1>
-                <button id="apply">辦卡補件</button>
-                <button id="adjust">額度調整補件</button>
-            </div>
+            <h1>玉山信用卡 旅遊最高享5%</h1>
+            <img src="img/kv_title.svg" alt="">
         </div>
     </article>
 
 
-    <!-- identity -->
-    <section id="identity" class="apply">
-        <div>
-        <h2>申辦信用卡資格＆身分證件
-            <!-- 辦卡補件 -->
-            <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="btn apply"><i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i> 立即上傳
-            </a>
+
+    <!-- 活動1 -->
+    <section id="act1">
+        <h2>指定旅遊／航空 最高享5%
+            <br><span>2023/9/1-2023/12/31</span>
         </h2>
-        
-            <div class="inbox">
-                <h3><span>01</span> 申辦資格</h3>
-                <ul>
-                    <li>依中華民國相關法令規定之成年人，可申請信用卡正卡。</li>
-                    <li>年滿15歲且為正卡人之配偶、父母、子女、兄弟姊妹或配偶之父母，可申請附卡 (須提供親屬關係證明)</li>
-                </ul>
-            </div>
 
-            <div class="inbox">
-                <h3><span>02</span> 身分證件</h3>
-                <ul>
-                    <li>中華民國國民身分證正反面影本 
-                        <a data-fancybox="" data-src="img/id-1.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
-                    </li>
-                    <li>外籍人士
-                        
-                        <ol>
-                            <li>護照影本 
-                                <a data-fancybox="" data-src="img/id-2.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
-                            </li>
+        <div class="act">
+            <!-- <div class="left_img">
+                <img src="img/act.png" alt="">
+            </div> -->
 
-                            <li>居留證影本 
-                                <a data-fancybox="" data-src="img/id-3.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
-                            </li>
+            <div class="right_txt">
 
-                            <li>大陸地區人民需檢附「往來台灣通行證」及「中華民國台灣地區入出境許可證」影本 
-                                <a data-fancybox="" data-src="img/id-4.png" href="javascript:;">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></a>
-                            </li>
-                        </ol>
-                    </li>
-                </ul>
-            </div>
+                <!-- inbox1 -->
+                <div class="inbox">
+                    <h3><span class="circle">01</span> 累積滿3萬元以上，享<span class="red">3%</span>回饋 <span class="gray">(上限1,000元)</span> 
+                        <br><span class="toleft">滿額再加碼，最高享<span class="red">5,000</span>元刷卡金</span></h3>
+                    <ul>
+                        <li>活動期間僅需登錄一次，消費滿額即符合回饋資格。</li>
+                        <li>登錄時間：2023/9/25、10/25、11/24、12/25 10:00起，開放正卡人登錄，每月限量2,000名。 </li>
+                        <table class="table_box">
+                            <tr>
+                                <th>滿10萬</th>
+                                <th>滿20萬</th>
+                                <th>滿30萬</th>
+                            </tr>
 
-            <div class="note">
-                <h3><span>03</span> 注意事項</h3>
-                <ul>
-                    <li>護照、居留證、往來台灣通行證、中華民國台灣地區入出境許可證，效期須在6個月以上。</li>
-                    <li>若上述文件效期即將屆滿，請於屆滿前30日內主動通知本行是否展延居留證效期並完成更新。未完成者，本行得於到期日後暫時停止持卡人使用卡片之權利。</li>
-                    <li>玉山銀行保留徵提各項文件及申請核准與否之權利；無論信用卡核卡與否，您所附文件及申請書將不予退還。</li>
-                </ul>
-            </div>
-        </div>
+                            <tr>
+                                <td>加碼1,000元</td>
+                                <td>加碼2,000元</td>
+                                <td>加碼4,000元</td>
+                                
+                            </tr>
+
+                            <tr>
+                                <td>總回饋2,000元</td>
+                                <td>總回饋3,000元</td>
+                                <td>總回饋5,000元</td>
+                            </tr>
+                        </table>
+                        <div class="button">
+                            <a class="btn_in" href="">9/25登錄</a>
+                            <a class="btn_in" href="">10/25登錄</a>
+                            <a class="btn_in" href="">11/24登錄</a>
+                            <a class="btn_in" href="">12/25登錄</a>      
+                        </div>
+                    </ul>
+                    
+                </div>
+
+                <!-- inbox2 -->
+                <div class="inbox">
+                    <h3><span class="circle">03</span> 累積滿50萬元以上，享<span class="red">5%</span>回饋</h3>
+                    <ul>
+                        <li>回饋上限15,000元，限量50名</li>
+                        <li>登錄時間：2023/12/27 10:00起，開放正卡人登錄</li>
+                        <div class="button">
+                            <a class="btn_in" href="">12/27登錄</a> 
+                        </div>
+                    </ul>
+                </div>
+            
+                <!-- notice -->
+                <div class="note">
+                    <ul>
+                        <li>以上活動正附卡消費合併計算，擇優回饋一次，每歸戶回饋上限15,000元</li>
+                        <li>以外幣結帳之消費及使用第三方支付，如 Pi 拍錢包、街口、LINE Pay、歐付寶…等，恕不適用本活動。</li>
+                        <li>所有適用通路之消費皆可共同累積，精選32間知名旅遊及航空通路詳見注意事項。</li>
+                    </ul>
+
+
+                    <button type="button" data-toggle="modal" data-target="#notice1" class="btn_dark">
+                      注意事項 <i class="fa-solid fa-chevron-right" style="color: #343a40;"></i>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="notice1" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">指定旅遊/航空 注意事項</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <ol>
+                                        <li>活動期間：2023/9/1~2023/12/31</li>
+                                        <li>活動期間內以正卡人資料登錄1次，於適用通路消費滿額始符合回饋資格，正、附卡合併計算。</li>
+                                        <li><span>累積滿3萬元享3%回饋(回饋上限1,000元)，含滿額加碼，最高贈5,000元刷卡金，總限量登錄8,000名，每月限量登錄2,000名，每歸戶回饋上限5,000元。</span></li>
+                                        <li><span>累積滿50萬享3%回饋，最高贈15,000元刷卡金，於12/27 10:00 開放登錄，限量登錄50名。</span></li>
+                                        <li><span>活動擇優回饋一次，每歸戶最高回饋上限為15,000元，符合刷卡金回饋資格，統一於2024年2月起關帳時陸續回饋於正卡人帳戶。</span></li>
+                                        <li>適用旅遊通路：雄獅、旅天下(加盟旅行社不適用)、易遊網、可樂旅遊、東南、鳳凰、ezfly易飛網、長汎、山富、五福、加利利、品冠、燦星、元本旅遊、喜鴻、百威、華友、行健、大興、上順、巨匠、世邦、創造旅遊、Klook、KKday、AsiaYo </li>
+                                        <li>適用航空：中華航空、長榮航空、星宇航空、台灣虎航、立榮航空、華信航空。</li>
+                                        <li>以上通路之消費可共同累積，惟不適用以外幣結帳之消費。</li>
+                                        <li>本活動可同享卡片原回饋 (紅利點數、家樂福好康點、OPENPOINT點數、HAPPY GO點數及現金回饋)、通路優惠。</li>
+                                        <li>本活動消費計算以活動期間內「消費日」為準，倘若活動期間付款失敗、訂單取消、退貨、逾期不繳或因簽帳爭議而暫停付款等情形，該筆消費金額將不列入計算範圍。</li>
+                                        <li>回饋之刷卡金僅限抵扣信用卡消費帳款，恕不得要求折現或以溢繳款方式領回。</li>
+                                        <li>正附卡消費合併計算，由正卡持卡人取得回饋資格。</li>
+                                        <li>使用第三方支付，如 Pi 拍錢包、街口、LINE Pay、歐付寶…等，恕不適用本活動。</li>
+                                        <li>上述活動不適用簽帳金融卡、公司卡、採購卡。</li>
+                                        <li>回饋時須持有有效之玉山信用卡，如持卡人信用卡 (不分正附卡) 遭強制停用、非流通卡、退貨致刷卡消費不符活動門檻、延滯各項帳款 (消費款、年費及各類利息費用等) 或違反信用卡相關條約者，玉山銀行得取消其活動資格或保留追回贈品之權利。</li>
+                                        <li>若無註明則均以新臺幣計算。</li>
+                                        <li>玉山銀行保留活動修改、變更及終止之權利。</li>
+                                    </ol>
+                                </div><!-- End modal-body -->
+                            </div><!-- End modal-content -->
+                        </div><!-- End modal-dialog -->
+                    </div><!-- End modal -->
+            </div> <!-- End right_txt -->
+        </div> <!-- End act1 -->
     </section>
 
-    <!-- financial -->
-    <section id="financial" class="apply adjust">
-        <div>
-        <h2><span class="adjust">額度調整</span>財力證明 請擇一上傳
-            <!-- 調額補件 -->
-            <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=DH#b" target="_blank" class="btn adjust">
-                <i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i> 立即上傳
-            </a>
-        </h2>
-        
-        <!-- 職業別篩選 -->
-        <div class="filter">
-            <button id="employee"><i class="fa-solid fa-briefcase" ></i> 上班族(受薪人士)</button>
-            <button id="house" ><i class="fa-solid fa-house" ></i> 家管/退休/自由業</button>
-            <button id="proprietor" ><i class="fa-solid fa-user-tie" ></i> 企業負責人</button>
-
-            <!-- apply -->
-            <button id="student_ap" ><i class="fa-solid fa-book" ></i> 學生</button>
-            <!-- adjust -->
-            <button id="student_ad" ><i class="fa-solid fa-book" ></i> 學生</button>
-            
-        </div>
-
-        <!-- 財證類型 -->
-        <div class="flex">
-
-            <!-- 學生：調額 -->
-            <div class="red adjust student_ad">
-                <div class="content">
-                    <h3>畢業證書</h3>
-                    <ul>
-                        <li>持學生卡額度2萬，申請調額需另提供畢業證書</li>
-                    </ul>
-                </div>
-                <a class="openbox2"></a>
-            </div>
-
-            <!-- 負責人 -->
-            <div class="apply adjust proprietor">
-                <div class="content">
-                    <h3>401/403/405報表</h3>
-                    <ul>
-                        <li>近六個月申報資料</li>
-                    </ul>
-                </div>
-                <a class="openbox2"></a>
-            </div>
-
-            <!-- 薪資單：上班族/學生 -->
-            <div class="apply adjust employee student">
-                <div class="content">
-                    <h3>個人薪資單</h3>
-                    <ul>
-                        <li>最近三個月薪資單</li>
-                        <li>薪資單需有您的任職公司、姓名、薪資明細及年度月份，勿部分擷取或遮蔽</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="img/f-1.png" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- 存摺：上班族/學生/負責人 -->
-            <div class="apply adjust employee student">
-                <div class="content">
-                    <h3>薪資轉帳/活期帳戶存摺/網路銀行截圖</h3>
-                    <ul>
-                        <li>須有完整帳號及戶名</li>
-                        <li>最近三個月內頁明細</li>
-                        <li>交易明細需完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="#popup_info-deposit-1" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- 存摺：負責人 -->
-            <div class="apply adjust proprietor">
-                <div class="content">
-                    <h3>活期帳戶存摺/網路銀行截圖</h3>
-                    <ul>
-                        <li>須有完整帳號及戶名</li>
-                        <li>最近三個月內頁明細</li>
-                        <li>交易明細需完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="#popup_info-deposit-2" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- 存摺：家管 -->
-            <div class="apply adjust house">
-                <div class="content">
-                    <h3>活期帳戶存摺/網路銀行截圖/退休俸祿存摺</h3>
-                    <ul>
-                        <li>須有完整帳號及戶名</li>
-                        <li>最近三個月內頁明細</li>
-                        <li>交易明細需完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="#popup_info-deposit-2" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- 扣繳憑單：上班族/負責人 -->
-            <div class="apply adjust employee proprietor">
-                <div class="content">
-                    <h3>扣繳憑單/所得清單/報稅收執聯</h3>
-                    <ul>
-                        <li>最新年度扣繳憑單/國稅局所得清單，薪資所得申報公司需為現職公司</li>
-                        <li>最新年度綜合所得稅報稅收執聯，需完整附上，並且可清楚看出您的姓名、公司名稱及申報年度</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="img/f-3.png" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- 扣繳憑單：家管/學生 -->
-            <div class="apply adjust house student">
-                <div class="content">
-                    <h3>扣繳憑單/所得清單/報稅收執聯</h3>
-                    <ul>
-                        <li>最新年度扣繳憑單/國稅局所得清單</li>
-                        <li>最新年度綜合所得稅報稅收執聯，需完整附上，並且可清楚看出您的姓名及申報年度</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="img/f-3.png" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- all -->
-            <div class="apply adjust employee house student proprietor">
-                <div class="content">
-                    <h3>定存單/房屋稅單/建物所有權狀/建物謄本</h3>
-                    <ul>
-                        <li>定存單，須仍在存續期間</li>
-                        <li>房屋稅單，需為最新年度</li>
-                        <li>建物所有權狀，所有權人須為本人</li>
-                    </ul>
-                </div>
-                <a class="openbox2"></a>
-            </div>
-
-            <!-- 勞健保：上班族/學生/負責人 -->
-            <div class="apply adjust employee student proprietor">
-                <div class="content">
-                    <h3>勞健保投保明細</h3>
-                    <ul>
-                        <li>勞保投保明細表</li>
-                        <li>健保投退保資料</li>
-                    </ul>
-                </div>
-                <a class="openbox" data-fancybox="" data-src="#popup_info" href="javascript:;"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例
-                </a>
-            </div>
-
-            <!-- all -->
-             <div class="apply adjust employee house student proprietor">
-                <div class="content">
-                    <h3>人壽保單可借貸餘額/股票或基金現值/理財對帳單</h3>
-                    <ul>
-                        <li>人壽保單價值金或解約金</li>
-                        <li>近一個月資料且申請人須為要保人</li>
-                        <li>近一個月股票或基金現值資料</li>
-                        <li>近一個月理財對帳單</li>
-                    </ul>
-                </div>
-                <a class="openbox2"></a>
-            </div>
-            
-        </div>
-
-    </section>
     
-    <!-- popup -->
-    <div id="popup_info" style="display: none;">
-        <div class="popup-content">
-            <div class="popup-img">
-                <img class="fancybox_image" src="img/f-4.png" alt="">
-                <img class="fancybox_image" src="img/f-5.png" alt="">
-            </div>
-        </div>
-    </div>
 
-    <div id="popup_info-deposit-1" style="display: none;">
-        <div class="popup-content">
-            <div class="popup-img">
-                <img class="fancybox_image" src="img/f-2-1.png" alt="">
-                <img class="fancybox_image" src="img/f-2-3.png" alt="">
-            </div>
-        </div>
-    </div>
+    <!-- 活動2 -->
+    <section id="act2">
+        <h2>早鳥限定 歲末感恩抽好禮
+            <br><span>2023/9/1~2023/10/31</span>
+        </h2>
 
-    <div id="popup_info-deposit-2" style="display: none;">
-        <div class="popup-content">
-            <div class="popup-img">
-                <img class="fancybox_image" src="img/f-2-2.png" alt="">
-                <img class="fancybox_image" src="img/f-2-4.png" alt="">
+        <div class="act">
+            <!-- <div class="left_img">
+                <img src="img/act.png" alt="">
+            </div> -->
+
+            <div class="right_txt">
+
+                <!-- inbox1 -->
+                <div class="inbox">
+                    <h3><span class="circle">01</span> 累積滿1萬元以上，享抽獎機會</h3>
+                    <ul>
+                        <li>抽獎時間：2023/11/10，電腦隨機抽出中獎者，並公告於本行網站，由玉山銀行主動通知領獎。</li>
+                        <table class="table_box2">
+                            <tr>
+                            <th>獎項</th>
+                            <th>價值</th>
+                            <th>名額</th>
+                            </tr>
+
+                            <tr>
+                                <td>Rimowa Trunk 32吋行李箱1個</td>
+                                <td>價值40,400元</td>
+                                <td>1名</td>
+                            </tr>
+                            <tr>
+                                <td>日本航空台北東京來回機票1組</td>
+                                <td>價值25,000元</td>
+                                <td>2名</td>
+                            </tr>
+
+                        </table>
+                    </ul>
+                </div><!-- End inbox -->
+
+                <!-- notice -->
+                <div class="note">
+                    <ul>
+                        <li>使用第三方支付，如 Pi 拍錢包、街口、LINE Pay、歐付寶…等，恕不適用本活動。</li>
+                        <li>Rimowa Trunk ：限量1份，隨機出貨不挑色。</li>
+                        <li>日航機票：JAL台北 (松山或桃園) 出發至東京 (羽田或成田) 經濟艙來回機票1組，共抽出2名。</li>
+                        <li>搭乘時間：須於2024年3月22日 (含) 之前從台灣出發 (但出發日期不適用於以下期間：2024年1月26日至2024年2月13日之間) ，機票效期為開票日後90天內有效。</li>
+                    </ul>
+
+                    <button type="button" data-toggle="modal" data-target="#notice2" class="btn_dark">
+                      注意事項 <i class="fa-solid fa-chevron-right" style="color: #343a40;"></i>
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="notice2" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">早鳥限定抽獎 注意事項</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <ol>
+                                        <li>活動期間：2023/9/1~2023/10/31</li>
+                                        <li><span>需於2023/9/1~2023/10/31於本活動指定通路累積消費滿1萬元始符合抽獎資格，每歸戶活動期間最多中獎一次，中獎獎項不得更換、轉讓或折換現金。</span></li>
+                                        <li><span>中獎名單將於2023/11/10以電腦隨機抽出並公告於本行網站，由玉山銀行主動通知領獎。</span></li>
+                                        <li>本活動獎項屬機會中獎，依中華民國所得稅法規定，機會中獎之獎項價值若超過新臺幣1,000元，所得將列入個人年度綜合所得稅申報，若獎品價值總額超過新臺幣20,000元，必須代扣10%中獎獎金稅額 (非中華民國境內居住之個人，依法扣繳20%稅金)，並配合本公司代扣繳相關事宜，得獎者需簽立中獎領獎確認書，提供身分證正、反面影本，以供本公司主管機關進行年度列單申報作業，若得獎者經主辦單位通知拒絕繳納代扣稅額，視為得獎者放棄得獎權益。</li>
+                                        <li>抽中日航機票者，玉山銀行將提供中獎名單予日本航空作為中獎人兌換資格檢核，請依機票得獎憑證載明之聯絡方式盡早向日本航空訂位，未取得確認機位恕無法開票。獲獎者取得確認機位後，可於JAL台灣分公司營業時間，攜帶機票得獎憑證及中華民國身分證與護照親臨辦理開票手續，經開票後，訂位不得變更。</li>
+                                        <li><span>機票訂位艙等為N，開票後不可變更、不可累積哩程，並且不得支付差額或使用哩程升等至商務艙，所得稅須於JAL台灣分公司現場以現金支付，燃油附加稅及其他機場稅等稅項可使用信用卡支付。相關兌換辦法依日本航空規範為準。</span></li>
+                                        <li>如有未盡事宜，日本航空保有修改、變更活動內容與獎項細節之權利，，並有權對本活動所有事宜作出解釋或裁決。如本活動因不可抗力之特殊原因無法執行時，有權決定取消、終止、修改或暫停本活動。修改後不再另行通知。</li>
+                                        <li>若有任何疑問請聯繫日航客服 (02)2175-5858。營業時間為平日週一至週五上午9:00-12:00；下午14:00-17:00。週六、週日及國定假日無法提供諮詢，敬請見諒。</li>
+                                        <li>本活動可同享卡片原回饋 (紅利點數、家樂福好康點、OPENPOINT點數、HAPPY GO點數及現金回饋)、通路優惠。</li>
+                                        <li>本活動消費計算以活動期間內「消費日」為準，倘若活動期間付款失敗、訂單取消、退貨、逾期不繳或因簽帳爭議而暫停付款等情形，該筆消費金額將不列入計算範圍。</li>
+                                        <li>正附卡消費合併計算，由正卡持卡人取得回饋資格。</li>
+                                        <li>使用第三方支付，如 Pi 拍錢包、街口、LINE Pay、歐付寶…等，恕不適用本活動。</li>
+                                        <li>上述活動不適用簽帳金融卡、公司卡、採購卡。</li>
+                                        <li>回饋時須持有有效之玉山信用卡，如持卡人信用卡 (不分正附卡) 遭強制停用、非流通卡、退貨致刷卡消費不符活動門檻、延滯各項帳款 (消費款、年費及各類利息費用等) 或違反信用卡相關條約者，玉山銀行得取消其活動資格或保留追回贈品之權利。</li>
+                                        <li>若無註明則均以新臺幣計算。</li>
+                                        <li>玉山銀行保留活動修改、變更及終止之權利。</li>
+                                    </ol>
+                                </div><!-- End modal-body -->
+                            </div><!-- End modal-content -->
+                        </div><!-- End modal-dialog -->
+                    </div><!-- End modal -->
+                </div> <!-- End note -->
+
+            </div> <!-- End right_txt -->
+        </div><!-- End act1 -->
+    </section>
+
+
+    <!-- 通路 -->
+    <section id="shop">
+        <h2>旅遊即時通</h2>
+        <ol>
+            <li>跟團玩、自由行最高現折<span class="red">4,000</span>元</li>
+            <li>星宇聯名卡享10元1哩加速回饋，回饋率最高約<span class="red">12.5%</span></li>
+            <li>哩程加速回饋通路：雄獅、可樂、東南、加利利、喜鴻、Klook</li>
+        </ol>
+        <div>
+            <div>
+                <img src="img/travel_lion.png" alt="雄獅旅遊">
+                <h4>雄獅旅遊</h4>
+                <p>中南美洲旅遊享早鳥價<br>2人同行再折<sapn class="red">10,000</sapn>元<br>紐澳、歐洲行程現折<sapn class="red">1,000</sapn>元<br></p>
+                <a class="btn_in" target="_blank" href="https://event.liontravel.com/zh-tw/esunbank/travel">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_eztravel.png" alt="易遊網">
+                <h4>易遊網</h4>
+                <p>玉山獨家訂房折扣<br>全球訂房最高現折<sapn class="red">1,700</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/discount/shopinfo?sno=3128">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_JR.png" alt="JR">
+                <h4>JR東日本創造旅遊</h4>
+                <p>日本三大豪華列車<br>JR鐵路周遊券最高回饋<span class="red">2%</span></p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/discount/shopinfo?sno=3017">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_JP.png" alt="日本九州">
+                <h4>日本九州旅遊折扣</h4>
+                <p>團體行最高現折<span class="red">2,000</span>元<br>自由行現折<span class="red">3%</span>無上限</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/kumamon_card#3">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_cola.png" alt="可樂旅遊">
+                <h4>可樂旅遊</h4>
+                <p>國旅卡/星宇卡<br>自由行最高現折<sapn class="red">8％</sapn><br>團體行最高現折<sapn class="red">2,000</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.colatour.com.tw/webDM/bankcard/esun/starlux/sale.html">了解更多</a>
+            </div>
+            
+            <div>
+                <img src="img/travel_JET.png" alt="東南旅遊">
+                <h4>東南旅遊</h4>
+                <p>暢遊東南亞、歐洲<br>獨享現折<sapn class="red">2,000</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.settour.com.tw/act/mkt/esun/index.html">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_besttour.png" alt="喜鴻假期">
+                <h4>喜鴻假期</h4>
+                <p>玉山卡全館行程現折<sapn class="red">1,500</sapn>元<br>
+                    星宇卡最高現折<sapn class="red">3,000</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.besttour.com.tw/e_web/banks?v=808/gift">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_mitravel.png" alt="華友旅行社">
+                <h4>華友旅行社</h4>
+                <p>單筆滿10萬元<br>贈28吋知名品牌<sapn class="red">行李箱</sapn></p>
+                <a class="btn_in" target="_blank" href="https://www.mitravel.com.tw/event-article.php?id=470">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_JAL.png" alt="日本航空">
+                <h4>日本航空</h4>
+                <p>易遊網購票最高<sapn class="red">9</sapn>折<br>日航官網購票最高回饋<sapn class="red">2,000</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/event/credit/1110810card/index.html">了解更多</a>
+            </div>
+
+             <div>
+                <img src="img/travel_galilee.png" alt="加利利">
+                <h4>加利利</h4>
+                <p>全卡友全館行程現折<sapn class="red">900</sapn>元<br>星宇卡最高現折<sapn class="red">4,000</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.galilee.com.tw/Esunbank_STARLUX">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_lifetour.png" alt="五福旅遊">
+                <h4>五福旅遊</h4>
+                <p>東南亞海島度假<br>現折<sapn class="red">1,000</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.lifetour.com.tw/event/bank/esun/index.html#!tablink2">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_asiayo.png" alt="AsiaYo">
+                <h4>AsiaYo</h4>
+                <p>郵輪限定<sapn class="red">3%</sapn>折扣無上限<br>海外訂房最高現折<sapn class="red">10%</sapn></p>
+                <a class="btn_in" target="_blank" href="https://asiayo.com/event/Esuncard_Campaign.html">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_klook.svg" alt="Klook">
+                <h4>Klook</h4>
+                <p>週三玉山日享現折<sapn class="red">666</sapn>元<br>全站天天享最高<sapn class="red">85</sapn>折</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/discount/shopinfo?sno=3001">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_agoda.svg" alt="agoda">
+                <h4>Agoda</h4>
+                <p>使用折扣碼<br>全球飯店享<sapn class="red">88</sapn>折優惠</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/discount/shopinfo?sno=3300">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_tripcom.svg" alt="tripcom">
+                <h4>Trip.com</h4>
+                <p>全站訂房享<sapn class="red">6%</sapn>折扣<br>機票最高現折<sapn class="red">500</sapn>元</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/discount/shopinfo?sno=3182">了解更多</a>
+            </div>
+
+            <div>
+                <img src="img/travel_booking.svg" alt="booking">
+                <h4>Booking</h4>
+                <p>使用折扣碼<br>全球訂房享<span class="red">10%</span>回饋</p>
+                <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/discount/shopinfo?sno=3016">了解更多</a>
             </div>
         </div>
-    </div>
+        <ul class="note2">
+            <li>哩程回饋試算：兌換台北飛日本來回經濟艙機票需3萬哩，台北飛札幌2023/7/1~7/7全額票價 (含稅) 約37,565元。旅遊加速通路消費30萬元可獲得3萬哩，37,565元 ÷ 300,000元 = 約12.5%<br>機票價格依市場供需、淡旺季節而浮動，以上試算機票價格為參考2023/4星宇航空官網之全額票價</li>
+        </ul>
+    </section>
+
+
+    <!-- 卡片 -->
+    <section id="card">
+        <h2>熱門旅遊卡</h2>
+        <div>
+            <div class="float-left">
+                <img src="img/card_01.svg" alt="星宇聯名卡">
+                <div>
+                    <h4>星宇航空聯名卡</h4>
+                    <p>海外消費最優<span class="red">5元1哩</span><br>指定旅遊通路<span class="red">10元1哩</span></p>
+                    <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/starlux-card">了解更多</a>
+                </div>
+            </div>
+
+            <div class="float-right">
+                <img src="img/card_04.svg" alt="熊本熊卡">
+                <div>
+                    <h4>熊本熊卡</h4>
+                    <p>日本消費最高享<span class="red">8.5%</span>優惠<br>九州團遊現折<span class="red">2,000</span>元，自由行現折<span class="red">3%</span>無上限</p>
+                    <a class="btn_in" target="_blank" href="https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/kumamon_card">了解更多</a>
+                </div>
+            </div>
+
+            <div class="float-left">
+                <img src="img/card_02.svg" alt="易遊卡">
+                <div>
+                    <h4>易遊卡</h4>
+                    <p>於易遊網消費最高回饋<span class="red">10%</span> eMoney</p>
+                    <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/eztravel">了解更多</a>
+                </div>
+            </div>
+
+            <div class="float-right">
+                <img src="img/card_03.svg" alt="雙幣卡">
+                <div>
+                    <h4>玉山雙幣卡</h4>
+                    <p>日本消費<span class="red">免收1.5%</span>國外交易手續費<br>再<span class="red">加碼1.5%</span>現金回饋無上限</p>
+                    <a class="btn_in" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/intro/bank-card/dualcurrency-card#2">了解更多</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
     <!-- footer -->
@@ -352,24 +487,9 @@
         </ul>
     </footer>
 
-
-    <!-- 浮動按鈕 -->
-    <div class="float_btn">
-        <!-- 辦卡補件 -->
-        <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="btn_f apply">
-            <i class="fa-solid fa-arrow-up-from-bracket" style="color: #ffffff;"></i>
-            <br>立即上傳
-        </a>
-         <!-- 調額補件 -->
-        <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=DH#b" target="_blank" class="btn_f adjust">
-            <i class="fa-solid fa-arrow-up-from-bracket" style="color: #ffffff;"></i>
-            <br>立即上傳
-        </a>
-    </div>
-
 </body>
 
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/fancybox.js"></script>
 
 </html>
