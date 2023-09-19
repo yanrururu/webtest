@@ -1,0 +1,363 @@
+@import url("reset.css");
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Arial,"Microsoft JhengHei","Heiti TC","sans-serif";
+}
+
+img{
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 100px;
+}
+
+
+/*--kv------------------------------------------------------------*/
+article{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+article > div{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10%;
+    background-image: url('../img/ota_kv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article > div > .kv_title{
+    background-color: rgb(92, 61, 36, 0.8);
+    width: 500px;
+    height: auto;
+    margin-bottom: 8%;
+    padding: 30px 40px;
+    color: #fff;
+}
+
+article > div > .kv_title > h1{
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+article > div > .kv_title > h2{
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+
+/*--room------------------------------------------------------------*/
+.img_pc{
+    display: block;
+}
+
+.img_m{
+    display: none;
+}
+
+.green{
+    color: #3cbaad;
+}
+
+.gray{
+    font-size: 13px;
+    font-weight: normal;
+    color: #7c7c7c;
+    letter-spacing: 1px;
+}
+
+.red{
+    color: #F8524C;
+}
+
+.remind{
+    color: #e65f44;
+}
+
+.btn{
+    width: 150px;
+    border-radius: 4px;
+    background-color: #ff9900;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn:hover{
+    background-color: #b37a00;
+}
+
+.btn_txt{
+    color: #3cbaad;
+    text-decoration: underline;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+section > div{
+    padding: 50px 0;
+}
+
+section > div:nth-child(odd){
+    background-color: #fffaeb;
+}
+
+section > div:nth-child(even){
+    background-color: #fff;
+}
+
+section > div > div{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+section > div > div > img{
+    width: 30%;
+}
+
+section > div > div > .room_text{
+    width: 65%;
+    letter-spacing: .1rem;
+    color: #434343;
+}
+
+
+section > div > div > .room_text > h3{
+    font-family: 'Noto Serif TC', serif;
+    font-size: 25px;
+    padding-bottom: 20px;
+    letter-spacing: .2rem;
+    color: #d97b00;
+}
+
+section > div > div > .room_text > h3:after {
+    display: block;
+    left: 0;
+    top: 10px;
+    content: "";
+    width: 250px;
+    height: 2px;
+    margin-top: 15px ;
+    background-color: #d97b00;
+}
+
+section > div > div > .room_text > p{
+    line-height: 28px;
+    color: #434343;
+    font-weight: bold;
+}
+
+section > div > div > .room_text > .time{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #595959;
+    padding-bottom: 20px;
+}
+
+section > div > div > .room_text > .text{
+    font-weight: bold;
+    list-style-type: square;
+    margin-left: 1.2em;
+    line-height: 28px;
+    padding-top: 10px;
+    color: #595959;
+}
+
+section > div > div > .room_text > ol .content{
+    font-size: 15px;
+    font-weight: normal;
+    list-style-type: disc;
+    margin-left: 1.2em;
+    line-height: 28px;
+    color: #595959;
+}
+
+section > div > div > .room_text > ol .content_time{
+    font-size: 14px;
+    font-weight: normal;
+    list-style-type: none;
+    line-height: 24px;
+    padding: 5px 0 0 0;
+    color: #595959;
+}
+
+section > div > div > .room_text > .notice{
+    font-size: 13px;
+    list-style-type: circle;
+    margin-left: 1.2em;
+    line-height: 24px;
+    padding-top: 25px;
+    color: #7c7c7c;
+}
+
+
+/*--notice------------------------------------------------------------*/
+aside{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+aside > div{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+
+aside > div > p{
+    font-size: 14px;
+    color: #595959;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+aside > div > ol{
+    list-style-type: dism;
+    font-size: 14px;
+    color: #595959;
+    line-height: 30px;
+    margin-left: 1.5em;
+    text-align: justify;
+}
+
+
+/*--PC------------------------------------------------------------*/
+@media screen and (max-width:1200px) {
+    section > div > div{
+        width: 90%;
+    }
+
+    aside > div{
+        width: 90%;
+    }
+}
+
+
+/*--iPad pro------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+
+}
+
+/*--Pad------------------------------------------------------------*/
+@media screen and (max-width:920px) {
+    article > div > .kv_title{
+        width: 100%;
+        margin-bottom: 0;
+        padding: 30px 20px;
+        color: #fff;
+    }
+}
+
+/*--iPad-----------------------------------------------------------*/
+@media screen and (max-width:768px) {
+    article{
+        padding-top: 110px;
+    }
+
+    article > div{
+        padding-top: 80%;
+    }
+
+    article > div > .kv_title > h1{
+        font-size: 40px;
+        line-height: 60px;
+        padding-bottom: 15px;
+    }
+
+    article > div > .kv_title > h2{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    article > div > .kv_title > h2 > span{
+        font-size: 25px;
+    }
+
+    aside > div{
+        width: 90%;
+    }
+
+    aside > div > ol{
+        margin-left: 1.4em;
+        text-align: left;
+        line-height: 28px;
+    }
+}
+
+/*--Mobile-----------------------------------------------------------*/
+@media screen and (max-width:540px) {
+    section > div{
+        padding: 50px 0;
+    }
+
+    section > div > div{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    section > div > div > img {
+        width: 100%;
+    }
+
+    section > div > div > .room_text {
+        width: 100%;
+    }
+
+    section > div > div > .room_text > h3{
+        font-size: 20px;
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+
+    section > div > div > .room_text > .text{
+        line-height: 26px;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    section > div > div > .room_text > ol .content{
+        font-size: 14px;
+        line-height: 25px;
+    }
+}

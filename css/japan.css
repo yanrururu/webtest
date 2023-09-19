@@ -1,0 +1,337 @@
+@import url("reset.css");
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Arial,"Microsoft JhengHei","Heiti TC","sans-serif";
+}
+
+img{
+    display: block;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1
+
+:target{
+    scroll-margin-top: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/*--kv------------------------------------------------------------*/
+article{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+
+article > div{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10%;
+    background-image: url('../img/jap_kv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article > div > .kv_title{
+    background-color: rgb(134, 51, 65, 0.8);
+    width: 500px;
+    height: auto;
+    margin-bottom: 8%;
+    padding: 30px 40px;
+    color: #fff;
+}
+
+article > div > .kv_title > h1{
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 5px;
+    text-align: left;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+article > div > .kv_title > h1 > span{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+article > div > .kv_title > h2{
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+
+article > div > .kv_title > h2 > span{
+    font-size: 30px;
+}
+
+
+/*--shop------------------------------------------------------------*/
+.btn_line{
+    width: 125px;
+    padding: 9px 0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;  
+    vertical-align: middle;
+    color: #fc746f;
+    background-color: rgb(0, 0, 0, 0);
+    border: 1px solid #fc746f;
+}
+
+.btn_line:hover{
+    color: #ef4343;
+    border: 1px solid #ef4343;
+}
+
+.btn{
+    width: 125px;
+    padding: 9px 0;
+    margin-bottom: 5px;
+    border-radius:4px;
+    font-size: 14px;
+    background-color: #fc746f;
+    cursor:pointer;
+    display: inline-block;
+    text-align: center;  
+    vertical-align: middle;
+    color: #fff;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #ef4343;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff5f3;
+}
+
+section > div{
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+section > div > .box{
+    width: 50%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.box > .box_img{
+    width: 25%;    
+}
+
+.box > .box_text{
+    margin-left: 2%;
+    width: 68%;
+}
+
+.box > .box_text > h3{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+}
+
+.box > .box_text > div{
+    padding: 10px 0;
+}
+
+.box > .box_text > div > p{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+}
+
+.box > .box_text > div > p > .note{
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.box > .box_text > div > p > strong{
+    color: #F8524C;
+}
+
+.box > .box_text > time{
+    font-size: 12px;
+    color: #00a19b;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    padding: 3px 8px;
+}
+
+.modal-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 0.3em;
+}
+
+.modal-body > ol{
+    list-style-type: dism;
+    font-size: 14px;
+    color: #595959;
+    line-height: 30px;
+    margin-left: 1.5em;
+    text-align: justify;
+}
+
+/*--notice------------------------------------------------------------*/
+aside{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+aside > div{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0 25px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+
+aside > div > p{
+    font-size: 14px;
+    color: #595959;
+    font-weight: bold;
+    line-height: 35px;
+    margin-bottom: 0;
+}
+
+aside > div > ol{
+    list-style-type: dism;
+    font-size: 14px;
+    color: #595959;
+    line-height: 30px;
+    margin-left: 1.5em;
+    text-align: justify;
+}
+
+
+/*--PC------------------------------------------------------------*/
+@media screen and (max-width:1200px) {
+    section > div{
+        width: 95%;
+    }
+
+    aside > div{
+        width: 90%;
+    }
+}
+
+
+/*--iPad pro------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+
+}
+
+/*--Pad------------------------------------------------------------*/
+@media screen and (max-width:920px) {
+    article > div > .kv_title{
+        width: 100%;
+        margin-bottom: 0;
+        padding: 30px 20px;
+        color: #fff;
+    }
+}
+
+/*--iPad-----------------------------------------------------------*/
+@media screen and (max-width:768px) {
+    article{
+        padding-top: 110px;
+    }
+
+    article > div{
+        padding-top: 80%;
+    }
+
+    article > div > .kv_title > h1{
+        font-size: 40px;
+        line-height: 60px;
+        padding-bottom: 15px;
+    }
+
+    article > div > .kv_title > h2{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    article > div > .kv_title > h2 > span{
+        font-size: 25px;
+    }
+
+    section > div {
+        width: 92%;
+        justify-content: center;
+    }
+
+    section > div > .box{
+        width: 100%;
+    }
+
+    .box > .box_text {
+        width: 75%;
+    }
+
+    aside > div > ol{
+        margin-left: 1.4em;
+        text-align: left;
+        line-height: 28px;
+    }
+}
+
+/*--Mobile-----------------------------------------------------------*/
+@media screen and (max-width:540px) {
+    .box > .box_text > h3{
+        font-size: 18px;
+    }
+
+    .modal-body > ol{
+        text-align: left;
+    }
+}
