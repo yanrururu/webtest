@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>網頁測試中</title>
+    <meta name="description" content="">
+    <meta name="keywords" content=""/>
+    <meta property="og:title" content="網頁測試中" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="img/kv.jpg">
+    <meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5LLQXL');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LLQXL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- header -->
+    <header>
+        <nav>
+            <a target="_blank" href="https://www.esunbank.com/zh-tw/personal"><img src="img/esun_logo.svg"></a>
+        </nav>
+    </header> 
+
+
+    <!-- kv -->
+    <article>
+        <div>
+            <div>
+                <h1>辦卡財力證明及相關文件說明</h1>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- 身分證件 -->
+    <section id="identity">
+        <div>
+        <h2>申辦信用卡資格＆身分證件
+            <!-- 辦卡補件 -->
+            <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="upload"><i class="fa-solid fa-arrow-up-from-bracket fa-beat" style="color: #ffffff;"></i> 辦卡補件上傳
+            </a>
+        </h2>
+        
+            <div class="inbox">
+                <h3><span>01</span> 申辦資格</h3>
+                <ul>
+                    <li>依中華民國相關法令規定之成年人，可申請信用卡正卡。</li>
+                    <li>年滿15歲且為正卡人之配偶、父母、子女、兄弟姊妹或配偶之父母，可申請附卡 (須提供親屬關係證明)</li>
+                </ul>
+            </div>
+
+            <div class="inbox">
+                <h3><span>02</span> 身分證件</h3>
+                <ul>
+                    <li>中華民國國民身分證正反面影本 
+                        <button data-toggle="modal" data-target="#identity-1">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></button>
+                    </li>
+                    <li>外籍人士
+                        
+                        <ol>
+                            <li>護照影本 
+                                <button data-toggle="modal" data-target="#identity-2">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></button>
+                            </li>
+
+                            <li>居留證影本 
+                                <button data-toggle="modal" data-target="#identity-3">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></button>
+                            </li>
+
+                            <li>大陸地區人民需檢附「往來台灣通行證」及「中華民國台灣地區入出境許可證」影本 
+                                <button data-toggle="modal" data-target="#identity-4">範例<i class="fa-solid fa-up-right-from-square fa-beat" style="padding-left: 3px;"></i></button>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="note">
+                <h3><span>03</span> 注意事項</h3>
+                <ul>
+                    <li>護照、居留證、往來台灣通行證、中華民國台灣地區入出境許可證，效期須在6個月以上。</li>
+                    <li>若文件效期即將屆滿，請於屆滿前30日內主動通知本行是否展延居留證效期並完成更新。未完成者，本行得於到期日後暫時停止持卡人使用卡片之權利。</li>
+                    <li>玉山銀行保留徵提各項文件及申請核准與否之權利；無論信用卡核卡與否，您所附文件及申請書將不予退還。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- id-modal -->
+    <div id="identity-1" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">四個角都要拍到，勿反光、裁切、模糊或過黑</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/id-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="identity-2" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">身分證：四個角都要拍到，勿反光、裁切、模糊或過黑</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/id-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="identity-3" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">護照：四個角都要拍到，勿反光、裁切、模糊或過黑</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/id-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="identity-4" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">居留證/往來通行證：四個角都要拍到，勿反光、裁切、模糊或過黑</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/id-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- financial -->
+    <section id="financial">
+        <div>
+            <h2>財力證明 請擇一上傳</h2>
+        </div>
+
+        <!-- 職業別篩選 -->
+        <div class="filter">
+            <button id="employee"><i class="fa-solid fa-briefcase" ></i> 上班族(受薪人士)</button>
+            <button id="house"><i class="fa-solid fa-house" ></i> 家管/退休/自由業</button>
+            <button id="proprietor"><i class="fa-solid fa-user-tie" ></i> 企業負責人</button>
+            <button id="student_ap"><i class="fa-solid fa-book" ></i> 學生</button>
+        </div>
+
+        <!-- 財證類型 -->
+        <div class="flex">
+            <!-- 負責人 -->
+            <div class="apply adjust proprietor">
+                <div class="content">
+                    <h4>401/403/405報表 (近六個月)</h4>
+                    <ul>
+                        <li>一般營業人銷售額與稅額申報書，或營業稅查定課徵核定稅額繳款書之申報資料</li>
+                    </ul>
+                </div>
+                <a class="openbox_hide"></a>
+            </div>
+
+            <!-- 薪資單：上班族/學生 -->
+            <div class="apply adjust employee student">
+                <div class="content">
+                    <h4>個人薪資單 (近三個月)</h4>
+                    <ul>
+                        <li>薪資單須有您的任職公司、 姓名、薪資明細及年度月份</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#salary"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 存摺：上班族/學生/負責人 -->
+            <div class="apply adjust employee student">
+                <div class="content">
+                    <h4>薪資轉帳/活期帳戶存摺/網路銀行截圖 (近三個月)</h4>
+                    <ul>
+                        <li>存摺封面須有完整帳號和戶名</li>
+                        <li>交易明細須完整且連續，並含有帳號、 日期、餘額等資料</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#deposit-em"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 存摺：負責人 -->
+            <div class="apply adjust proprietor">
+                <div class="content">
+                    <h4>活期帳戶存摺/網路銀行截圖 (近三個月)</h4>
+                    <ul>
+                        <li>存摺封面須有完整帳號和戶名(請以個人存款資料提供為主)</li>
+                        <li>交易明細須完整且連續，並含有帳號、日期、餘額等資料</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#deposit-home"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 存摺：家管 -->
+            <div class="apply adjust house">
+                <div class="content">
+                    <h4>活期帳戶存摺/網路銀行截圖/退休俸祿存摺 (近三個月)</h4>
+                    <ul>
+                        <li>存摺封面須有完整帳號和戶名</li>
+                        <li>交易明細須完整且連續，勿部分擷取或遮蔽，內頁需含有帳號、日期、餘額等資料</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#deposit-home"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 扣繳憑單/綜所稅：上班族/負責人/學生 -->
+            <div class="apply adjust employee proprietor student">
+                <div class="content">
+                    <h4>扣繳憑單/所得清單/報稅收執聯 (近一年度)</h4>
+                    <ul>
+                        <li>扣繳憑單/國稅局所得清單，薪資所得申報公司須為現職公司</li>
+                        <li>報稅收執聯須提供完整頁數，並可清楚看出您的姓名、公司名稱及申報年度</li>
+
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#voucher-em"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 扣繳憑單/綜所稅：家管 -->
+            <div class="apply adjust house">
+                <div class="content">
+                    <h4>扣繳憑單/所得清單/報稅收執聯 (近一年度)</h4>
+                    <ul>
+                        <li>報稅收執聯須提供完整頁數，並可清楚看出您的姓名及申報年度</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#voucher-home"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 定存單：all -->
+            <div class="apply adjust employee house student proprietor">
+                <div class="content">
+                    <h4>定存單/房屋稅單/建物所有權狀/建物謄本</h4>
+                    <ul>
+                        <li>定存單，須仍在存續期間</li>
+                        <li>房屋稅單，須為最新年度</li>
+                        <li>建物所有權狀，所有權人須為本人</li>
+                    </ul>
+                </div>
+                <a class="openbox_hide"></a>
+            </div>
+
+            <!-- 勞健保：上班族/學生/負責人 -->
+            <div class="apply adjust employee student proprietor">
+                <div class="content">
+                    <h4>勞健保投保明細</h4>
+                    <ul>
+                        <li>投保單位須為現職公司</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#insurance"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+
+            <!-- 股票：all -->
+             <div class="apply adjust employee house student proprietor">
+                <div class="content">
+                    <h4>股票或基金現值/理財對帳單/人壽保單可借貸餘額 (近一個月)</h4>
+                    <ul>
+                        <li>股票資料須有現值金額及查詢日期</li>
+                        <li>人壽保單價值金或解約金，申請人須為要保人，且須有查詢日期</li>
+                    </ul>
+                </div>
+                <button class="openbox" data-toggle="modal" data-target="#stock"><i class="fa-solid fa-plus fa-beat fa-l" style="color:#fff"></i><br>範例</button>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- f-modal -->
+    <div id="salary" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/f-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="deposit-em" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="carousel-deposit-em" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-deposit-em" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-deposit-em" data-slide-to="1"></li>
+                            <li data-target="#carousel-deposit-em" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/f-2-1.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/f-2-3.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/f-2-5.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-deposit-em" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-deposit-em" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="deposit-home" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="carousel-deposit-home" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-deposit-home" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-deposit-home" data-slide-to="1"></li>
+                            <li data-target="#carousel-deposit-home" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/f-2-2.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/f-2-4.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/f-2-5.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-deposit-home" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-deposit-home" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="voucher-em" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div id="carousel-voucher-em" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-voucher-em" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-voucher-em" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/f-3.png" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/f-3-1.png" class="d-block w-100">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-voucher-em" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-voucher-em" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="voucher-home" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="carousel-voucher-home" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-voucher-home" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-voucher-home" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/f-3.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/f-3-2.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-voucher-home" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-voucher-home" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="insurance" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="carousel-insurance" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-insurance" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-insurance" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/f-4.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/f-5.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-insurance" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-insurance" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stock" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/f-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="warning">
+            <div>
+                <div class="left_box">
+                    <p>謹慎理財 信用無價</p>
+                </div>
+
+                <div class="right_box">
+                    <p>分期零利率產品：零手續費、零總費用年百分率。循環利率：5.88%～15%(依本行電腦評等而訂，基準日：2015/9/1) 預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 其他相關費率依本行網站及申請書公告</p>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="https://www.esunbank.com/zh-tw/about/customer-service" target="_blank">聯繫客服</a></li>
+            <li>|</li>
+            <li><a href="https://www.esunbank.com/zh-tw/about/qa/personal/credit-card" target="_blank">常見問題</a></li>
+            <li>|</li>
+            <li><a href="https://www.esunbank.com/zh-tw/about/announcement/privacy/privacy-statement" target="_blank">個資法定告知事項</a></li>
+            <li>|</li>
+            <li>© E.SUN BANK</li>
+        </ul>
+    </footer>
+
+
+    <!-- 浮動按鈕 -->
+    <div class="upload_float">
+        <!-- 辦卡補件 -->
+        <a href="https://card.esunbank.com.tw/EsunCreditweb/txnproc/mail?gi=AJ#b" target="_blank" class="float_btn">
+            <i class="fa-solid fa-arrow-up-from-bracket" style="color: #ffffff;"></i>
+            <br>辦卡補件
+        </a>
+    </div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>

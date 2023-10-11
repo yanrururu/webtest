@@ -1,0 +1,500 @@
+@import url("reset.css");
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: Arial,"Microsoft JhengHei","Heiti TC","sans-serif";
+}
+
+img{
+    display: block;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+h1{
+    color: #262626;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h2{
+    color: #434343;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h3{
+    color: #434343;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h4{
+    color: #434343;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #434343;
+    letter-spacing: 0.5px;
+}
+
+p{
+    color: #434343;
+}
+
+li{
+    color: #434343;
+    letter-spacing: 0.5px;
+}
+
+article{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+article > div{
+    background-image: url('../img/kv.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+
+article > div > div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+article > div > div >h1{
+    max-width: 650px;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+}
+
+
+.upload{
+    font-size: 16px;
+    width: 180px;
+    background-color: rgb(0, 192, 139);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-align: center;
+    float: right;
+    padding: 15px 10px;
+    border-radius: 30px;
+}
+
+
+.upload_float{
+    z-index:100;
+    overflow: hidden;
+    position: fixed;
+    right: 2%;
+    bottom:6%;
+    width: auto;
+}
+
+.float_btn{
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    background-color: #1cada4;
+}
+
+
+section{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-image: url("../img/bg_green.svg");
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-size: cover;
+}
+
+section > div{
+    width: 1200px;
+    height: auto;
+    margin: 50px auto;
+}
+
+
+/* identity */
+section > div > .inbox{
+    margin: 30px auto;
+}
+
+section > div > .inbox > h3{
+    font-weight: bold;
+    line-height: 35px;
+    color: #00a19b;
+}
+
+section > div > .inbox > h3 > span{
+    background-color: #00a19b;
+    border-radius: 50%;
+    color: #00a19b;
+    padding: 4px;
+}
+
+section > div > .inbox button{
+    border: 0px;
+    background: none;
+    color: #00a19b;
+    text-decoration: underline;
+}
+
+section > div > .inbox > ul{
+    border-left-color: #00a19b;
+    border-left-width: 2px;
+    border-left-style: solid;
+    margin-left: 0.8em;
+    list-style-type: disc;
+}
+
+section > div > .inbox li{
+    line-height: 35px;
+    margin-left: 2.4em;
+    color: #595959;
+}
+
+section > div > .inbox li li{
+    counter-increment: my-counter;
+    margin-left: 1.3em;
+    text-indent: -1.3em;
+}
+
+section > div > .inbox li li::before {
+    content: "("counter(my-counter) ")";
+}
+
+section > div > .inbox li li > a{
+    text-indent: 0em;
+}
+
+section > div > .note{
+    margin-top: 30px;
+} 
+
+section > div > .note > h3{
+    line-height: 35px;
+}
+
+section > div > .note > h3 > span{
+    background-color: #666666;
+    border-radius: 50%;
+    color: #666666;
+    padding: 4px;
+}
+
+section > div > .note > ul{
+    border-left-color: #666666;
+    border-left-width: 2px;
+    border-left-style: solid;
+    margin-left: 0.8em;
+}
+
+section > div > .note > ul li{
+    color: #666666;
+    margin-left: 2.2em;
+    line-height: 30px;
+    list-style-type: circle;
+}
+
+
+/* financial */
+section#financial{
+    background-color: #fafafa;
+}
+
+
+/* fliter-tab */
+.filter{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.filter button{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 24.5%;
+    margin: 0 1px;
+    padding: 20px 0;
+    background-color: #fafafa;
+    box-shadow: 0 0 4px 0 rgb(100 100 100 / 30%);
+    border: 0px;
+    border-bottom: 5px solid #47cccc;
+    color: #7c7c7c;
+}
+
+.filter button:hover{
+    color: #262626;
+}
+
+.employee, .house, .student, .proprietor{
+    display: none;
+}
+
+/* content */
+.flex{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.flex > div{
+    width: 31.5%;
+    margin: 0 0 50px 0;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%);
+    border-bottom: 5px solid #47cccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flex > .red{
+    border-bottom: 5px solid #ffa099;
+}
+
+.flex > div > .content{
+    height: 200px;
+}
+
+.flex > div > .content > h4{
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 2px 0 15px 0 ;
+    border-bottom: 1.2px solid #47cccc;
+}
+
+.flex > .red > .content > h4{
+    border-bottom: 1.2px solid #ffa099;
+}
+
+.flex > div > .content > ul{
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    line-height: 32px;
+    padding-top: 20px ;
+    list-style-type: disc;
+    margin-left: 1.3em;
+}
+
+.openbox {
+    font-size: 14px;
+    width: 60px;
+    height: 60px;
+    border: 0px;
+    background-color: #47cccc;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    float: right;
+}
+
+.openbox_hide {
+    width: 60px;
+    height: 60px;
+    padding: 15px 14px;
+    background-color: #fff;
+    display: inline-block;
+    float: right;
+}
+
+/* modal */
+.modal-body{
+    margin: 0 auto;
+    padding: 10px 10px 20px 10px;
+}
+
+.modal-body img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#identity-1 .modal-body img{
+    max-height: 600px;
+    padding-bottom: 10px;
+}
+
+#identity-2 .modal-body img{
+    max-height: 600px;
+    padding-bottom: 10px;
+}
+
+#identity-3 .modal-body img{
+    max-height: 600px;
+    padding-bottom: 10px;
+}
+
+#identity-4 .modal-body img{
+    max-height: 600px;
+    padding-bottom: 10px;
+}
+
+
+/* slide */
+.carousel-indicators{
+    bottom: -5px;
+}
+
+.carousel-indicators li {
+    background-color: #333;
+    opacity: 0.4;
+    border-bottom: 0px solid transparent;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 40%;
+}
+
+
+
+/*--PC------------------------------------------------------------*/
+@media screen and (max-width:1200px) {
+
+}
+
+
+/*--iPad pro------------------------------------------------------------*/
+@media screen and (max-width:1024px) {
+    section > div{
+        width: 90%;
+    }
+
+    .filter{
+        width: 90%;
+        margin: 0 auto 50px auto;
+    }
+
+    .filter button{
+        width: 23.5%;
+    }
+
+    .flex{
+        width: 90%;
+    }
+
+    .flex > div {
+        width: 49%;
+    }
+
+}
+
+/*--Pad------------------------------------------------------------*/
+@media screen and (max-width:920px) {
+    .flex{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+/*--iPad-----------------------------------------------------------*/
+@media screen and (max-width:768px) {
+    article {
+        background-position: 76%;
+    }
+
+    article > div > div > h1{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+    
+    .filter button{
+        width: 47%;
+        margin: 6px 4px;
+        font-size: 14px;
+    }
+}
+
+/*--Mobile-----------------------------------------------------------*/
+@media screen and (max-width:540px) {
+    article > div{
+        background-position: 63%;
+    }
+
+    .flex > div{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .flex > div > .content{
+        height: auto;
+    }
+
+    .upload{
+        clear: both;
+        float: none;
+        margin: 20px auto 0 auto;
+    }
+
+    .openbox_hide{
+        display: none;
+    }
+}
+
+/*--Mobile se-----------------------------------------------------------*/
+@media screen and (max-width: 375px) {
+    .filter button {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
