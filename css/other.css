@@ -1,0 +1,514 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+
+/* 共用 --------------------------------------------- */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+}
+
+.main-nav .anchor{
+	margin-top: 13px;
+}
+
+/* 至底選單 ------------------------------------------ */
+
+.menu_bottom{
+	display: none;
+}
+
+@media screen and (max-width:800px){
+	/* body{
+		padding-bottom: 60px;
+	} */
+	footer .link{
+		padding-bottom: 80px;
+	}
+	.menu_bottom{
+		width: 100%;
+		height: auto;
+		display: flex;
+		position: fixed;
+		bottom: 0px;
+		z-index: 7;
+	}
+	.menu_bottom nav.mb_nav{
+		width: 100%;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag{
+		width: 100%;
+		display: flex;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag li{
+		width: calc(100% / 6);
+		height: 60px;
+		border-top: 3px solid #000;
+		border-bottom: 3px solid #000;
+		border-left: 3px solid #000;
+		color: #262626;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+	    align-items: center;
+	    margin: 0 auto;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag li a{
+		display: inline-block;
+		font-size: 14px;
+		line-height: 19px;
+		font-weight: 500;
+		text-align: center;
+		letter-spacing: 3px;
+		padding-left: 3px;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag li.border_right{
+		border-right: 3px solid #000;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag li.tag_yellow{
+		background-color: #fff7ba;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag li.m_active{
+		background-color: #fc605b;
+	}
+	.menu_bottom nav.mb_nav ul.mb_tag li.m_active a{
+		color: #fff;
+		font-weight: 700;
+	}	
+}
+
+/* kv ------------------------------------------------------------------------ */
+
+article#main_kv-title{
+	background-image: url('../images/main_title_bg5.svg');
+	background-repeat: repeat;
+	background-size: 50px;
+	width: 100%;
+	height: 270px;
+	border-bottom: 3px solid #000;
+
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	margin-top: 65px;	
+    position: relative;
+    overflow: hidden;
+}
+.kv-title_bg{
+	width: 1200px;
+	height: auto;
+	text-align: center;
+}
+.kv-title_bg figure{
+	margin: 0;
+}
+
+h1.seo-h1{
+	background-image: url('../images/main_title_bg5a.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	color: #ffb029;
+	font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 7.4rem;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+
+}
+
+/* 消費立即折抵 ----------------------------------------------------------------- */
+
+article#other_discount{
+	width: 100%;
+	background-image: url('../images/other_bg.svg');
+	background-repeat: repeat;
+	background-size: 50px;
+	width: 100%;	
+	/* border-bottom: 3px solid #000; */	
+
+	display: flex;
+	justify-content: center;
+}
+.other_discount_content{
+	width: 1200px;
+	height: auto;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.title_a{
+	width: 18%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.title_a p.seo-p{
+	width: 0;
+	height: 0;
+	scale: 0;		
+}
+.title_a img{
+	width: 100%;
+}
+.title_b{
+	width: 40%;
+	height: auto;
+	margin: 0 auto;
+}
+.title_b h2.seo-h2{
+	width: 0;
+	height: 0;
+	scale: 0;	
+}
+.title_b img{
+	width: 100%;
+}
+
+.content_ic_card,.content_store{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.content_ic_card h3.seo-h3,.content_store h3.seo-h3{
+	width: 0;
+	height: 0;
+	scale: 0;	
+}
+.content_ic_card img,.content_store img{
+	width: 36%;
+	margin-bottom: 25px;
+}
+.content_ic_card .kumamon_ic_card{
+	width: 30%;
+	height: auto;
+	margin: 0 auto;
+}
+.content_ic_card .kumamon_ic_card img{
+	width: 100%;
+}
+.content_ic_card p{
+	color: #000;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 1.5px;
+    text-indent: 1.5px;
+    margin: 0 auto;
+    width: 90%;
+}
+.content_ic_card p strong{
+	color: #fc605b;
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: 4px;
+    text-indent: 4px;
+    display: block;
+}
+.content_ic_card ul.card_notice{
+	color: #262626;
+    text-align: center;
+    padding: 0 40px;
+}
+.content_ic_card ul.card_notice li::before{
+	content: "※";
+}
+.content_ic_card ul.card_notice li{
+	font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    text-indent: 0.8px;
+}
+
+
+ul.store_all{
+	background-color: #fff;
+	width: 65%;
+	height: auto;
+	border-radius: 30px;
+	margin: 0 auto;
+	padding: 25px;
+
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;	
+}
+ul.store_all li.store_logo{
+	width: 24%;
+	height: auto;
+	padding: 20px;
+
+	display: flex;
+	justify-content: center;
+    align-items: center;	
+}
+ul.store_all li.store_logo img{
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.btn_notice {
+    width: 100%;
+    max-width: 12.5rem;
+    height: 4rem;
+    border: 3px solid #000;
+    border-radius: 40px;
+    background: #00a19b;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-indent: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px auto 80px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn_notice:hover {
+    color: #ffe033;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        max-width: 8.75rem;
+    }
+}
+
+.other_favorable{
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	justify-content: space-evenly;
+}
+.favorable_pic{
+	width: 30%;
+	margin: 0;
+
+	transition: 0.5s;	
+}
+.favorable_pic:hover{
+	transform: scale(1.08, 1.08);
+}
+.favorable_pic h3.seo-h3{
+	width: 0;
+	height: 0;
+	scale: 0;	
+}
+.favorable_pic img{
+	width: 100%;
+}
+
+/* 1280px -------------------------------------------------------------------- */
+@media screen and (max-width:1280px){
+	.kv-title_bg{
+		width: 90%;
+	}
+	.other_discount_content{
+		width: 90%;
+	}
+}
+/* 1050px -------------------------------------------------------------------- */
+@media screen and (max-width:1050px){
+	.other_discount_content{
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.title_a{
+		width: 19%;
+		margin-bottom: 14px;
+	}
+	.title_b{
+		width: 44%;
+	}
+	.content_ic_card, .content_store{
+		margin-top: 35px;
+	}
+	.content_ic_card .kumamon_ic_card{
+		width: 34%;
+	}
+	.content_ic_card img, .content_store img {
+	    width: 39%;
+	    margin-bottom: 20px;
+	}
+	.content_ic_card p{
+		font-size: 22px;
+		line-height: 36px;
+	}
+	.content_ic_card p strong{
+		font-size: 46px;
+		line-height: 76px;
+	}
+	ul.store_all{
+		width: 70%;
+	}
+	.btn_notice{
+		max-width: 11rem;
+    	font-size: 20px;
+	}
+}
+/* 890px -------------------------------------------------------------------- */
+@media screen and (max-width:890px){
+	.title_a{
+		width: 23%;
+	}
+	.title_b{
+		width: 55%;
+	}
+	.content_ic_card img, .content_store img{
+		width: 44%;
+	}
+	.content_ic_card p{
+		font-size: 20px;
+		line-height: 32px;
+	}
+	ul.store_all{
+		width: 80%;
+	}
+	.favorable_pic{
+		width: 31%;
+	}
+}
+/* 768px -------------------------------------------------------------------- */
+@media screen and (max-width:768px){
+	.title_a{
+		width: 28%;
+	}
+	.title_b{
+		width: 72%;
+	}
+	.content_ic_card img, .content_store img{
+		width: 60%;
+	}
+	.content_ic_card .kumamon_ic_card{
+		width: 55%;
+	}
+	.content_ic_card p{
+		width: 65%;
+	}
+	.content_ic_card p strong{
+		font-size: 33px;
+		line-height: 58px;
+		letter-spacing: 2px;
+		text-indent: 2px;
+	}
+	ul.store_all li.store_logo{
+		width: 32%;
+		padding: 18px;
+	}
+	.other_favorable{
+		flex-wrap: wrap;
+	}
+	.favorable_pic{
+		width: 45%;
+    	margin-bottom: 18px;
+	}
+	.btn_notice{
+		height: 3.6rem;
+	}
+	.favorable_pic {
+	    width: 58%;
+	    margin-bottom: 30px;
+	}
+}
+/* 540px -------------------------------------------------------------------- */
+@media screen and (max-width:540px){
+	.title_a{
+		width: 38%;
+	}
+	.title_b{
+		width: 90%;
+	}
+	.content_ic_card img, .content_store img{
+		width: 75%;
+	}
+	.content_ic_card .kumamon_ic_card{
+		width: 65%;
+	}
+	.content_ic_card p{
+		width: 80%;
+	}
+	.content_ic_card p strong{
+		font-size: 32px;
+		line-height: 54px;
+	}
+	ul.store_all{
+		width: 90%;
+		padding: 18px;
+	}
+	ul.store_all li.store_logo{
+		width: 32%;
+    	padding: 15px;
+	}
+	.favorable_pic {
+	    width: 66%;
+	    margin-bottom: 30px;
+	}
+}
+/* 430px -------------------------------------------------------------------- */
+@media screen and (max-width:430px){
+	article#main_kv-title{
+		height: 210px;
+	}
+	h1.seo-h1 {
+	    font-size: 2.4rem;
+	    line-height: 5.8rem;
+	    letter-spacing: 0.7rem;
+    	text-indent: 0.7rem;
+	}
+	.title_a{
+		width: 42%;
+		margin-bottom: 10px;
+	}
+	.content_ic_card, .content_store{
+		margin-top: 28px;
+	}
+	.content_ic_card img, .content_store img{
+		width: 80%;
+		margin-bottom: 15px;
+	}
+	.content_ic_card .kumamon_ic_card{
+		width: 70%;
+	}
+	.content_ic_card p{
+		width: 90%;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.content_ic_card p strong{
+		font-size: 28px;
+		line-height: 48px;
+	}
+	.content_ic_card ul.card_notice{
+		padding: 0 5px;
+	}
+	ul.store_all{
+		padding: 10px;
+	}
+	ul.store_all li.store_logo{
+		padding: 12px;
+	}
+	.favorable_pic {
+	    width: 86%;
+	    margin-bottom: 20px;
+	}
+}
+
+
+
+
+
