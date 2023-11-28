@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>網頁測試中</title>
+    <meta name="description" content="">
+    <meta name="keywords" content=""/>
+    <meta property="og:title" content="網頁測試中" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="">
+    <meta property="og:image" content="img/kv.jpg">
+    <meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="https://www.esunbank.com/bank/rwd/images/esun.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.18/css/uikit.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+
+    <!-- Anti-flicker snippet (recommended)  -->
+        <style>
+            .async-hide {
+                opacity: 0 !important
+            }
+        </style>
+
+        <script>
+            (function (a, s, y, n, c, h, i, d, e) {
+                s.className += ' ' + y;
+                h.start = 1 * new Date;
+                h.end = i = function () {
+                    s.className = s.className.replace(RegExp(' ?' + y), '')
+                };
+                (a[n] = a[n] || []).hide = h;
+                setTimeout(function () {
+                    i();
+                    h.end = null
+                }, c);
+                h.timeout = c;
+            })(window, document.documentElement, 'async-hide', 'dataLayer', 3000, {
+                'GTM-5LLQXL': true
+            });
+        </script>
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5LLQXL');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Global site tag (gtag.js) - Google Ads: AW-588094604 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-588094604"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-588094604');
+        </script>
+
+
+        <!-- Event snippet for 立即辦卡 (1) conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+        <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-588094604/u9otCPbJjc8DEIy5tpgC',
+              'event_callback': callback
+          });
+          return false;
+        }
+        </script>
+
+
+        <!-- Meta Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '465075538759496');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=465075538759496&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LLQXL" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- header -->
+    <header>
+        <nav>
+            <a target="_blank" href="https://www.esunbank.com/zh-tw/personal"><img src="img/esun_logo.svg"></a>
+
+            <a id="menu" href="javascript:;"></a>
+            <div>
+                <a href="#gift">首購禮</a>
+                <a href="#ezoffer">專屬優惠</a>
+                <a href="#faq">關於eMoney</a>
+                <a class="nav_btn" target="_blank" href="https://www.eztravel.com.tw/events/esuneztravelcard/index.html?PromoSN=000000000000001" onclick="gtag_report_conversion();fbq('trackCustom', 'EsunezTravel', { custom_param: '立即辦卡'});">立即辦卡</a>
+            </div>
+        </nav>
+    </header> 
+
+
+    <!-- kv -->
+    <article class="kv">
+        <div>
+            <h1>玉山易遊卡</h1>
+        </div>
+    </article>
+
+
+    <!-- 卡片介紹 -->
+    <article id="ezcard">
+        <div>
+            <div class="left_img">
+                <img src="img/card.gif" alt="易遊卡">
+            </div>
+
+            <div class="right_text">
+                <h2>玉山易遊卡</h2>
+                <ul class="list">
+                    <li>可選擇悠遊卡或無悠遊卡功能</li>
+                </ul>
+                <ul class="note">
+                    <li>附卡卡面及電子票證功能與正卡相同。</li>
+                    <li>同一持卡人以申請1張正卡或附卡為限，重複申請將不予核發。</li>
+                    <li>申辦玉山易遊卡<span class="red">須先登入易遊網會員</span>。</li>
+                    <li>核卡後易遊卡專屬eMoney點數優惠及各項權益將回饋於申辦易遊卡前登入之易遊網會員帳號，附卡人所享eMoney點數優惠及各項權益將回饋於正卡人之易遊網會員帳號。</li>
+                </ul>
+                <a class="btn" target="_blank" href="https://www.eztravel.com.tw/events/esuneztravelcard/index.html?PromoSN=000000000000001" onclick="gtag_report_conversion();fbq('trackCustom', 'EsunezTravel', { custom_param: '立即辦卡'});">立即辦卡</a>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- 首購禮 -->
+    <section id="gift">
+        <h2>首購禮</h2>
+        <div class="leftright">
+            <div class="box">
+                <div class="box_img">
+                    <img src="img/1.svg">
+                </div>
+                <div class="box_text">
+                    <h3>ez首購</h3>
+                    <time>活動期間：2023/7/1~2024/6/30</time>
+                    <br>
+                    <time>入住/出發期間：2023/7/1~2024/12/31</time>
+                    <div>
+                        <ul class="list">
+                            <li>首次申辦易遊卡正卡，核卡後於易遊網線上消費現折<strong>1,000</strong>元</li>
+                        </ul>
+                        <ul class="note">
+                            <li>正附卡合併計算，每歸戶限回饋1次。</li>
+                            <li>符合資格者，將於核卡後次日於易遊網會員帳號匯入折扣碼。</li>
+                            <li>折扣碼有效期限為60天，逾期失效，恕不補發。</li>
+                            <li>機票/機加酒、護照簽證、當地遊票券(含高鐵國旅聯票)恕不適用。</li>
+                        </ul>
+                    </div>
+                    <a class="btn" target="_blank" href="https://www.esunbank.com/zh-tw/personal/credit-card/intro/co-branded-card/eztravel#2">活動詳情</a>
+                    <button class="btn_line" data-toggle="modal" data-target="#gift1">注意事項
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box_img">
+                    <img src="img/2.svg">
+                </div>
+                <div class="box_text">
+                    <h3>ez加碼</h3>
+                    <time>活動期間：2023/7/1~2024/6/30</time>
+                    <div>
+                        <ul class="list">
+                            <li>首次申辦易遊卡正卡，核卡後90天內享國外一般消費加碼<strong>3%</strong>刷卡金 <span class="gray_s">(上限1,000元)</span></li>
+                            <li>國外一般消費最高<strong>5%</strong>回饋 <span class="gray_s">(含原國外一般消費2%eMoney無上限+加碼3%刷卡金上限1,000元)</span></li>
+                        </ul>
+                        <ul class="note">
+                            <li>加碼3%刷卡金回饋正附卡合併計算。</li>
+                        </ul>
+                    </div>
+                    <button class="btn_line" data-toggle="modal" data-target="#gift2">注意事項
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 專屬優惠 -->
+    <section id="ezoffer">
+        <h2>專屬優惠</h2>
+        <div>
+            <p class="time">活動期間：2023/7/1~2024/6/30</p>
+            <p>易遊網機票、訂房最高<strong>10%</strong> eMoney回饋 (1點=1元)，易遊網全站旅遊商品折抵金額無上限</p>
+            <ul class="note center">
+                <li>2024/1/1起特店分期之交易不享原卡片基本回饋 eMoney點數，<a class="text-link" target="_blank" href="https://event.esunbank.com.tw/credit/notice/index.html">詳見公告</a>
+                </li>
+            </ul>
+            <div class="uk-container-center tab">
+            <ul class="uk-tab" data-uk-tab="{connect:'#my-id'}">
+                <li aria-expanded="true" class="uk-active"><a href="">ez回饋</a></li>
+                <li aria-expanded="false" class=""><a href="">ez升級</a></li>
+            </ul>
+            <ul id="my-id" class="uk-switcher uk-margin">
+                <li class="uk-active">
+                    <div class="content d-flex align-items-center justify-content-center">
+                        <div class="flex_card">
+                            <div>
+                                <div class="card-title">國內一般消費</div>
+                                <div class="card-text">
+                                    <p><strong>1%</strong> eMoney</p>
+                                    <span class="gray_s">回饋無上限</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card-title">國外一般消費</div>
+                                <div class="card-text">
+                                    <p><strong>2%</strong> eMoney</p>
+                                    <span class="gray_s">回饋無上限</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card-title">易遊網線上消費</div>
+                                <div class="card-text">
+                                    <p><strong>2%</strong> eMoney</p>
+                                    <span class="gray_s">限官網、APP消費，回饋無上限</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card-title">易遊網機票</div>
+                                <div class="card-text">
+                                    <p>最高 <strong>10%</strong> eMoney</p>
+                                    <span class="gray_s">當月一般消費滿1萬元<br>易遊網機票享原易遊網2%+加碼8%</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="card-title">易遊網訂房</div>
+                                <div class="card-text">
+                                     <p>最高 <strong>10%</strong> eMoney</p>
+                                     <span class="gray_s">購買易遊網機票後60天內訂房<br>訂房享原易遊網2%+加碼8%</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inbox">
+                        <a class="btn" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/eztravel#1">活動詳情</a>
+                        <button class="btn_line" data-toggle="modal" data-target="#feedback">注意事項
+                        </button>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="content">
+                        <div class="box">
+                            <div class="box_img">
+                                <img src="img/upgrade.png">
+                            </div>
+                            <div class="box_text">
+                                <time>活動期間：2023/7/1~2024/6/30</time>
+                                <div>
+                                    <ul>
+                                        <li>首次申辦易遊卡正卡且核卡，直接升等為易遊網<strong>白金會員</strong></li>
+                                    </ul>
+                                    <ul class="note">
+                                        <li>易遊網白金會員有效期限為<span class="red">2~2.5年 (有效期為每年6/30或12/31)</span>，逾期失效。</li>
+                                    </ul>
+                                    <div>
+                                        <a class="btn" target="_blank" href="https://www.esunbank.com.tw/bank/personal/credit-card/intro/co-branded-card/eztravel#2">活動詳情</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- ez訂房 -->
+        <div class="otherbox">
+            
+            <!-- 日航回饋 -->
+            <div class="box">
+                <div class="box_img">
+                    <img src="img/3.svg">
+                </div>
+                <div class="box_text">
+                    <h3>ez日航回饋</h3>
+                    <time>活動期間：2023/1/1~2023/12/31</time>
+                    <br>
+                    <time>出發期間：2023/1/1~2023/12/31</time>
+                    <div>
+                        <ul class="list">
+                            <li>於易遊網線上訂購日本航空日本全航線，結帳輸入折扣碼代號<span class="green">【f5jpe】</span>享現折<strong>5%</strong>
+                            <br>活動同享易遊網機票最高<strong>10%</strong> eMoney回饋，最高回饋<strong>15%</strong>
+                            <br><span class="gray_s">(10％＝易遊網2%無上限 + 機票加碼8%，每月上限1,000點)</span>
+                            </li>
+                        </ul>
+                        <ul class="note">
+                            <li>限使用易遊卡全額支付。</li>
+                            <li>限定台灣出發且全程搭乘日本航空班號正航班。</li>
+                            <li>每張折扣碼需使用完畢才可再次領取。</li>
+                        </ul>
+                    </div>
+                    <a class="btn" target="_blank" href="https://www.eztravel.com.tw/activity/esuneztravelcard/coupon/?utm_source=bank&utm_medium=esun_os&utm_campaign=all_ezcardcoupon&AllianceID=404&SID=2">領取折扣碼</a>
+                    <button class="btn_line" data-toggle="modal" data-target="#jal">注意事項
+                    </button>
+                </div>
+            </div>
+
+            <!-- 卡友禮遇 -->
+            <div id="cardonly" class="box">
+                <div class="box_img">
+                    <img src="img/4.svg">
+                </div>
+                <div class="box_text">
+                    <h3>卡友專屬禮遇</h3>
+                    <div class="list_box">
+                        <ul>
+                            <li>環島之星折<strong>8%</strong></li>
+                            <li>高鐵假期折<strong>8%</strong></li>
+                            <li>高鐵聯票滿2,500元折<strong>200</strong>元</li>
+                            <li>指定WIFI分享器享<strong>3</strong>折優惠</li>
+                            <li>指定全球上網卡享<strong>6</strong>折優惠</li>
+                            <li>桃園機場環亞貴賓室享<strong>55</strong>折優惠</li>
+                        </ul>
+                        <ul>
+                            <li>買JR PASS送日本<strong>5</strong>日上網卡</li>
+                            <li>指定沖繩租車折<strong>5%</strong></li>
+                            <li>國外旅遊短程折<strong>600</strong>元<span class="gray_s"> (東北亞/東南亞/港澳大陸/郵輪)</span>
+                                <ul class="note">
+                                    <li>指定商品不適用</li>
+                                </ul>
+                            </li>
+                            <li>國外旅遊長程折<strong>1,000</strong>元<span class="gray_s"> (歐洲/美加/紐澳/印度西亞)</span>
+                                <ul class="note">
+                                    <li>指定商品不適用</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn" target="_blank" href="https://www.eztravel.com.tw/events/esuneztravelcard/index.html#card_sale">活動詳情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 注意事項：ez首購 -->
+    <div id="gift1" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ez首購 注意事項</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <ol>
+                        <li>限首次申辦易遊卡正卡參加，並須於<span class="red">2023/7/1~2024/6/30</span>申辦且核卡。</li>
+                        <li>符合資格者，將於核卡後次日於易遊網會員帳號匯入折扣碼，正附卡合併計算，每歸戶限回饋1次1,000元折扣碼。</li>
+                        <li>限使用易遊卡於<span class="red">易遊網官網或App線上消費</span>方可使用折扣碼優惠，若以易遊網門市刷卡消費、傳真刷卡單或Apple Pay、Google Pay、LINE Pay等相關綁定行動載具 (APP) 支付恕無法參加。</li>
+                        <li>折扣碼不得與其他優惠或折扣碼同時使用。</li>
+                        <li>折扣碼一經使用後即失效，如未於期限內付款及更改訂單而造成訂單取消之情形，折扣碼無法重新退還使用。</li>
+                        <li>折扣碼使用時，會員需自行確認所提供之會員資料均為正確，若因會員資料不全或錯誤，或因任何電腦、網路、行動裝置設定或其他不可預期之問題，恕不負責，恕不補發。</li>
+                        <li><span class="red">折扣碼有效期限為60天</span>，逾期失效，恕不補發。
+                        </li>
+                        <li><span class="red">2023/7/1~2024/12/31出發/入住。</span>
+                        </li>
+                        <li><span class="red">機票/機加酒、護照簽證、當地遊票券(含高鐵國旅聯票)恕不適用。</span>
+                        </li>
+                        <li>折扣碼使用方式查詢請參閱<a class="text-link"
+                                href="https://www.eztravel.com.tw/events/esuneztravelcard/first.html" target="_blank">活動網站</a>，折扣碼使用問題請洽易遊網客服 (02) 412-8001。
+                        </li>
+                        <li>若無註明則均以新臺幣計算。
+                        </li>
+                        <li>玉山銀行及易遊網保留活動修改、變更及終止之權利。
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注意事項：ez加碼 -->
+    <div id="gift2" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ez加碼 注意事項</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <ol>
+                        <li>限首次申辦易遊卡正卡參加，須於<span class="red">2023/7/1~2024/6/30</span>申辦且核卡；首次申辦資格以正卡人於玉山銀行系統認定為準。</li>
+                        <li>國外一般消費最高5%回饋，包含原國外一般消費2% eMoney (無上限) + 加碼3%刷卡金 (上限1,000元)。</li>
+                        <li>國外一般消費加碼3%刷卡金回饋採正附卡合併計算，核卡後90天內國外消費回饋上限1,000元。</li>
+                        <li>刷卡金當期帳單直接折抵，每期現金回饋採四捨五入法計算至新臺幣元，限按沖銷順序直接折抵當期新增一般消費款且不可申請退回，亦不可兌換現金，正、附卡合併依歸戶回饋。</li>
+                        <li>分期交易以該筆總金額計算回饋。</li>
+                        <li>交易以實際刷卡金額為主，交易取消時，符合活動回饋資格之交易將列入負項計算收取。</li>
+                        <li>國外一般消費指註冊地在國外之特店，或是被收取「國外交易服務費」之交易，包含國外實體商店或國外購物網站，但不包含投資交易及匯兌平台 (如eToro、MCO、Wise等) 及旅行支票等非一般消費。</li>
+                        <li>回饋時須持有效之玉山易遊卡，如持卡人信用卡 (不分正附卡) 遭強制停用、非流通卡、退貨致刷卡消費不符活動門檻、延滯各項帳款 (消費款、年費及各類利息費用等) 或違反信用卡相關條約者，玉山銀行得取消或保留追回回饋之權利。</li>
+                        <li>若無註明則均以新臺幣計算。</li>
+                        <li>玉山銀行及易遊網保留活動修改、變更及終止之權利。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注意事項：ez回饋 -->
+    <div id="feedback" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ez回饋 注意事項</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <ol>
+                        <li>易遊卡專屬eMoney點數回饋及各項權益將回饋於正卡人申辦易遊卡前登入之易遊網會員帳號，附卡人所享eMoney點數回饋及各項權益將回饋於正卡人之易遊網會員帳號。</li>
+                        <li>一般消費回饋易遊網eMoney點數 (1點=1元)，恕無法回饋玉山銀行紅利點數，分期交易以該筆總金額計算回饋。</li>
+                        <li><span class="red">國內一般消費</span>不包含易遊網官網或App刷卡消費。</li>
+                        <li><span class="red">國外一般消費</span>指註冊地在國外之特店，或是被收取「國外交易服務費」之交易，包含國外實體商店或國外購物網站，但不包含投資交易及匯兌平台 (如eToro、MCO、Wise等) 及旅行支票等非一般消費。 </li>
+                        <li><span class="red">易遊網線上消費</span>限易遊網官網或App刷卡消費，若以易遊網門市實體刷卡消費、傳真刷卡單或Apple Pay、Google  Pay、LINE Pay等相關綁定行動載具 (APP) 支付恕無法參加。</li>
+                        <li>每筆消費採無條件捨去法計算eMoney點數回饋，<span class="red">正附卡合併計算</span>，將於消費請款後<span class="red">次月15日</span>回饋至正卡人之易遊網會員帳號。</li>
+                        <li>易遊網機票消費包含機加酒，商品定義以易遊網網站公告為準。</li>
+                        <li><span class="red">易遊網機票消費加碼條件：</span>當月國內外一般消費滿1萬元 (不包含易遊網官網或App刷卡消費) 以日曆月為準 (例如：7/1~7/31)，且須於次月10日前請款始符合機票加碼回饋資格，機票加碼8%每月回饋上限1,000點。<br>例如：2023/7一般消費累積滿1萬元 (不包含易遊網官網或App刷卡消費)，2023/8/10前請款，若2023/7購買易遊網機票，將於2023/8/15提供易遊網2%＋機票加碼回饋8%。</li>
+                        <li><span class="red">易遊網訂房消費加碼條件：</span>須於當月完成易遊網訂房且購買機票始符合訂房加碼回饋資格，訂房加碼8%每月回饋上限1,000點。</li>
+                        <li><span class="red">eMoney點數折抵於易遊網全站商品皆適用，折抵無上限。</span></li>
+                        <li><span class="red">eMoney點數有效期限為6個月</span>，逾期失效。例如：2023/8/15回饋eMoney點數有效期限至2024/2/29。<a class="text-link"
+                                href="https://member.eztravel.com.tw/member/serviceFAQ?tab=membership&nav=eMoneyInfo#eMoneyWhat"
+                                target="_blank">eMoney說明</a></li>
+                        <li>持卡人若因任何原因取消交易/退貨、刷卡爭議退還款項或帳務調整等之情事，將依其退還款項金額計算應扣回之eMoney點數，並扣除持卡人之eMoney點數；如持卡人之eMoney點數不足或已全數兌換完畢，本行得以eMoney 1點換算為新臺幣1元後，列示為信用卡帳單之應繳金額向持卡人收取。</li>
+                        <li>回饋時須持有有效之玉山易遊卡，如持卡人信用卡 (不分正附卡) 遭強制停用、非流通卡、退貨致刷卡消費不符活動門檻、延滯各項帳款 (消費款、年費及各類利息費用等)或違反信用卡相關條約者，玉山銀行得取消其回饋資格或保留追回回饋之權利。</li>
+                        <li>活動門檻限新增一般消費。一般消費不包含之項目請見<a class="text-link"
+                                href="https://www.esunbank.com.tw/event/credit/notice/index.html" target="_blank">非一般消費項目公告</a>。</li>
+                        <li>若無註明則均以新臺幣計算</li>
+                        <li>玉山銀行及易遊網保留活動修改、變更及終止之權利。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 注意事項：ez日航 -->
+    <div id="jal" class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ez日航 注意事項</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body">
+                    <ol>
+                        <li>限使用易遊卡於易遊網官網或App訂購日本航空-日本全航線才享折抵優惠，若以易遊網門市刷卡消費、傳真刷卡單或Apple Pay、Google Pay、LINE Pay等相關綁定行動載具 (APP) 支付恕無法參加。</li>
+                        <li>日本航空-日本全航線限定台灣出發且全程搭乘日本航空班號正航班。</li>
+                        <li>折扣碼使用方式：領取折扣碼 → 使用易遊卡於易遊網官網或App訂購日本航空-日本全航線 → 選取折扣碼即可現折訂單金額，每張折扣碼需使用完畢才可再次領取，每筆訂單折扣碼限折抵1次。</li>
+                        <li>折扣碼查詢方式：登入易遊網會員 → 折扣查詢 → 折扣碼管理。</li>
+                        <li>本活動折扣碼不得與其他優惠或折扣碼同時使用。</li>
+                        <li>折扣碼一經使用後即失效，如未於期限內付款及更改訂單而造成訂單取消之情形，折扣碼無法重新或退還使用。</li>
+                        <li>折扣碼使用時，會員需自行確認所提供之會員資料均為正確，若因會員資料不全或錯誤，或因任何電腦、網路、行動裝置設定或其他不可預期之問題，恕不負責，亦不補發。</li>
+                        <li>活動詳情以易遊網活動網站為準。</li>
+                        <li>若無註明則均以新臺幣計算。</li>
+                        <li>玉山銀行與易遊網保留活動修改、變更及終止之權利。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ -->
+    <aside id="faq">
+        <h2>關於eMoney</h2>
+        <div>
+            <a class="notice_btn">eMoney是什麼？
+                <img src="img/arrow.svg" alt="">
+            </a>
+            <div class="content">
+                <p>eMoney為易遊網點數 (1點=1元)，可自由分配、折抵易遊網全站旅遊商品，折抵金額無上限、聰明旅遊省更多！</p>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">如何獲得eMoney？
+                <img src="img/arrow.svg" alt="">
+            </a>
+            <div class="content">
+                <p>易遊卡一般消費回饋易遊網eMoney點數 (1點=1元)，每筆消費累積旅遊金！</p>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">eMoney回饋如何計算？
+                <img src="img/arrow.svg" alt="">
+            </a>
+            <div>
+                <ul>
+                    <li>易遊卡每筆消費採無條件捨去法計算eMoney點數回饋，正附卡合併計算，將於次月15日回饋至正卡人之易遊網會員帳號。</li>
+                    <li>易遊網白金、鑽石會員權益請參閱易遊網網站公告。每筆消費採無條件捨去法計算eMoney點數回饋，旅遊商品回程日後第3天回饋。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">eMoney如何查詢？
+                <img class="arrow" src="img/arrow.svg" alt="">
+            </a>
+            <div>
+                <ol>
+                    <li>登入易遊網會員</li>
+                    <li>點選會員服務中心</li>
+                    <li>點選我的eMoney點數，了解 eMoney 點數之使用方式、點數查詢、商品兌換等相關訊息</li>
+                    <a class="text-link" target="_blank" href="https://member.eztravel.com.tw/member/login?custType=member&loginType=GENERAL">立即查詢</a>
+                </ol>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">eMoney如何使用？
+                <img class="arrow" src="img/arrow.svg" alt="">
+            </a>
+            <div>
+                <ul>
+                    <li>支付易遊網旅遊商品費用時，於eMoney使用欄位輸入欲抵用之點數 (1點=1元)，系統會自動折抵。</li>
+                    <li>1點=1元，可折抵易遊網全站旅遊商品 (例如：機票、訂房、機加酒、餐券、票券等)，折抵金額無上限。</li>
+                    <li>限使用線上信用卡一次付清支付。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">eMoney是否有使用期限？
+                <img class="arrow" src="img/arrow.svg" alt="">
+            </a>
+            <div>
+                <ul>
+                    <li>易遊卡回饋之eMoney點數有效期限為6個月，逾期失效。例如：2023/8/15回饋eMoney點數有效期限至2024/2/29。</li>
+                    <li>易遊網白金、鑽石會員權益請參閱易遊網網站公告。eMoney點數效期每年6/30、12/31結算１次，當年1~6月累積eMoney點數於次年12/31前有效；當年7~12月累積eMoney點數於後年6/30前有效。有效期限最短為1年6個月，最長為2年。</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">eMoney是否有折抵順序？
+                <img class="arrow" src="img/arrow.svg" alt="">
+            </a>
+            <div>
+                <p>優先折抵即將失效的點數，再依先進先出法進行折抵，將會從較早生效的點數進行扣除，依序折抵至點數歸零為止。</p>
+            </div>
+        </div>
+
+        <div>
+            <a class="notice_btn">若取消交易或退貨，eMoney如何處理？
+                <img class="arrow" src="img/arrow.svg" alt="">
+            </a>
+            <div>
+                <ul>
+                    <li>交易「全額」取消：
+                        <br>付款時所折抵的eMoney點數，將依退款金額計算應退還之點數，並退還至正卡持卡人的易遊網會員帳號。如因會員個人因素取消訂單，則依相關規定扣除手續費後退款，不足部份才扣留已扣抵之 eMoney 點數替代之。例如：一筆10,000元訂單，9,000元以信用卡刷卡並使用1,000點eMoney點數進行折抵。假設該筆交易取消時將收取500元手續費，則訂單將會退款9,500元，故會退回9,000元至信用卡及500點eMoney點數至易遊網會員帳號。</li>
+                    <li>交易「部分」取消：
+                        <br>將先退還以信用卡支付的金額。例如：一筆10,000元訂單，9,000元以信用卡刷卡並使用1,000點eMoney點數進行折抵。假設該筆交易退貨3,000元，將會退回3,000元至信用卡。</li>
+                    <li>當交易取消時，該筆交易原回饋的eMoney點數，將依退款金額計算應收回之eMoney點數，並於正卡持卡人的易遊網會員帳戶收回eMoney點數。若帳號中的eMoney點數不足以致無法收回，玉山銀行得以1點eMoney換算為新臺幣1元後，列示為信用卡帳單之應繳金額向持卡人收取。</li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="warning">
+            <div>
+                <div class="left_box">
+                    <p>謹慎理財 信用無價</p>
+                </div>
+
+                <div class="right_box">
+                    <p>分期零利率產品：零手續費、零總費用年百分率。循環利率：5.88%～15%(依本行電腦評等而訂，基準日：2015/9/1) 預借現金手續費(依預借現金約定結付幣別區分)：預借現金金額x3.5%+(新臺幣100元/3.5美元/350日圓/2.5歐元) 其他相關費率依本行網站及申請書公告</p>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li><a href="https://www.esunbank.com/zh-tw/about/customer-service" target="_blank">聯繫客服</a></li>
+            <li>|</li>
+            <li><a href="https://www.esunbank.com/zh-tw/about/qa/personal/credit-card" target="_blank">常見問題</a></li>
+            <li>|</li>
+            <li><a href="https://www.esunbank.com/zh-tw/about/announcement/privacy/privacy-statement" target="_blank">個資法定告知事項</a></li>
+            <li>|</li>
+            <li>© E.SUN BANK</li>
+        </ul>
+    </footer>
+
+    <!-- 浮動按鈕 -->
+    <div class="float_btn">
+        <a  target="_blank" href="https://www.eztravel.com.tw/events/esuneztravelcard/index.html?PromoSN=000000000000001" onclick="gtag_report_conversion();fbq('trackCustom', 'EsunezTravel', { custom_param: '立即辦卡'});">
+            <img src="img/apply.svg" alt="立即辦卡">
+            立即辦卡
+        </a>
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.15.18/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    //追蹤碼
+    (function (w, d, t, r, u) {
+        w[u] = w[u] || [];
+        w[u].push({ 'projectId': '10000', 'properties': { 'pixelId': '10067683', 'he': '<email_address>' } }); var s = d.createElement(t);
+        s.src = r;
+        s.async = true;
+        s.onload = s.onreadystatechange = function () {
+            var y, rs = this.readyState,
+                c = w[u]; if (rs && rs != "complete" && rs != "loaded") { return } try {
+                    y = YAHOO.ywa.I13N.fireBeacon;
+                    w[u] = [];
+                    w[u].push = function (p) { y([p]) };
+                    y(c)
+                } catch (e) { }
+        }; var scr = d.getElementsByTagName(t)[0],
+            par = scr.parentNode;
+        par.insertBefore(s, scr)
+    })(window, document, "script", "https://s.yimg.com/wi/ytc.js", "dotq");
+
+
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'DC-11894474');
+
+
+    gtag('event', 'conversion', {
+        'allow_custom_scripts': true,
+        'u1': '[合作銀行]',
+        'send_to': 'DC-11894474/invmedia/esunb0+standard'
+    });
+
+    //按鈕鈕追蹤碼
+    function tradecode() {
+        window.appier_q = window.appier_q || [];
+        window.appier_q.push({ "t": "register", "content": { "id": "_rnW", "site": "esunbank.com.tw" } }, { "t": "type_conversion", "content": "submit", "action_id": "Conversion_248f", "track_id": "xeaadfrernW", "opts": { "unique_key": "true" } })
+
+
+        window.dotq = window.dotq || [];
+        window.dotq.push({
+            projectId: '10000',
+            properties: {
+                pixelId: '10067683',
+                qstrings: {
+                    et: 'custom',
+                    ea: 'apply_now',
+                },
+            },
+        });
+    }
+</script>
+
+</body>
+</html>
+
+<!-- 231109 -->
