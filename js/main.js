@@ -10,8 +10,7 @@ $(function(){
   })
 })
 
-
-//FAQ開合
+// notice
 var coll = document.getElementsByClassName("notice_btn");
 var i;
 
@@ -28,8 +27,15 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-//FAQ箭頭
-$(".notice_btn").click(function (e) {
-  e.preventDefault();
-  $(this).find("img").toggleClass("rotate");
-});
+// arrow
+$(function(){
+  $(".notice_btn").on("click",function(){
+    if($(this).find("img").hasClass("rotate")){
+      $(this).find("img").removeClass("rotate");
+    }
+    else{
+      $(this).find("img").addClass("rotate");
+    }
+  })
+})
+
